@@ -13,8 +13,8 @@ class StoreTest {
 	
 	@Test
 	public void learnResponse() {
-		e.learnResponse("Äxx", "Zäta");		
-		assertEquals(e.getResponse("Äxx"), "Zäta");
+		e.learnResponse("ï¿½xx", "Zï¿½ta");		
+		assertEquals(e.getResponse("ï¿½xx"), "Zï¿½ta");
 	}
 	
 	/**Learn a response then unlearn it, then checking if the mindsweep was succesful.
@@ -22,9 +22,9 @@ class StoreTest {
 	
 	@Test
 	public void getResponse() {
-		e.learnResponse("Äxx", "Zäta");
+		e.learnResponse("ï¿½xx", "Zï¿½ta");
 		e.unlearnAll();
-		assertEquals(e.getResponse("Äxx"), null);
+		assertEquals(e.getResponse("ï¿½xx"), null);
 	}
 
 	/**Try to get a respond from a non-existing request.
@@ -38,7 +38,7 @@ class StoreTest {
 	 */
 	@Test
 	public void learnMultipleResponses() {
-		e.learnResponse("Äxx", "Zäta");
+		e.learnResponse("ï¿½xx", "Zï¿½ta");
 		e.learnResponse("Banana", "Skids");
 		e.learnResponse("Laurel", "Hardy");
 		e.learnResponse("Ful", "bil");
@@ -49,11 +49,16 @@ class StoreTest {
 	 */
 	@Test
 	public void learnDifferentRequestWithSameResponses() {
-		e.learnResponse("Äxx", "Ett");
-		e.learnResponse("Äxx", "Två");
-		e.learnResponse("Äxx", "Tre");
-		assertEquals(e.getResponse("Äxx"), "Tre");
-		assertNotEquals(e.getResponse("Äxx"), "Två");
+		e.learnResponse("ï¿½xx", "Ett");
+		e.learnResponse("ï¿½xx", "Tvï¿½");
+		e.learnResponse("ï¿½xx", "Tre");
+		assertEquals(e.getResponse("ï¿½xx"), "Tre");
+		assertNotEquals(e.getResponse("ï¿½xx"), "Tvï¿½");
+	}
+	@Test
+	public void lottaTest() {
+	}
 	}
 	
 }
+
