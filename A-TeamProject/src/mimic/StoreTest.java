@@ -58,7 +58,7 @@ class StoreTest {
 	@Test
 	public void lottaTest() {
 	}
-	}
+	
 	
 }
 
