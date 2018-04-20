@@ -60,6 +60,10 @@ class StoreTest {
 	awesome.funkar();
 	}
 
-	//Nancy testar to commit
+	
+	@Test
+	public void downloadTest() {
+	}
 }
 
+// Nancy testar to commit 2
