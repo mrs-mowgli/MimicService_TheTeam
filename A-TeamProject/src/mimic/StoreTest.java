@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 class StoreTest {
 
 	Store e = new Store();
+	//kommentar test
+	
 	
 	/**Learn a response and assert that it remembers it correctly.
 	 TF:1.01*/	
