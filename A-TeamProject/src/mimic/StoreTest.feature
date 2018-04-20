@@ -3,13 +3,14 @@ Feature: The mock should remember requests and responses
 Scenario: Learn a response and show it remembers it correctly. TF:2.01
 
 Given Mimicservice is up and running
-When I give a request	as Number and response is One
+And has learned request	as Number and response is One
+When I give request for Number
 Then I get response is One
 
 Scenario: Learn a response then unlearn it. TF:2.02
 Given Mimicservice is up and running
-When I give a request	as Number and response is One
-And I unlearn all
+And has learned request	as Number and response is One
+When I unlearn all
 Then I get response is NULL
 
 Scenario: Try to get a respond from a non-existing request. TF:2.03
