@@ -1,4 +1,4 @@
-Feature: The mock should rember requests and responses
+Feature: The mock should remember requests and responses
 
 Scenario: Learn a response and assert that it remembers it correctly. TF:2.01
 Given A request and a response has been saved 
