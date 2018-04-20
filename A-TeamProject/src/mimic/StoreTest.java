@@ -56,12 +56,6 @@ class StoreTest {
 		assertNotEquals(e.getResponse("Number"), "Two");
 
 	}
-
-	@Test
-	public void lottaTest() {
-	awesome.funkar();
-	}
-
 	
 	@Test
 	public void downloadTest() {
