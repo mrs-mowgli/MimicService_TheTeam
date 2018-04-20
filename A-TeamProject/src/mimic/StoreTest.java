@@ -8,7 +8,7 @@ class StoreTest {
 
 	Store e = new Store();
 	//kommentar test
-	
+	//kommentar test 2
 	
 	/**Learn a response and assert that it remembers it correctly.
 	 TF:1.01*/	
