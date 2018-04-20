@@ -6,10 +6,10 @@ When I give a request	 and response Number One
 Then I get correct response back is Number One
 
 Scenario: Learn a response then unlearn it. TF:1.02
-Given Mimicservice up and running
-And I give a request	and response Number One
-When Unlearn a request Number
-Then I get correct response back is NULL
+Given Mimicservice is up and running
+When I give a request	as Number and response is One
+And I unlearn all
+Then I get response is NULL
 
 Scenario: Try to get a respond from a non-existing request. TF:1.03
 Given Mimicservice up and running
