@@ -26,5 +26,7 @@ Then I get correct response back as Hardy
 
 Scenario: Learning multiple requests and checks that the last req/resp is the one and only true. TF:1.05
 Given Mimicservice up and running
-When
-Then I get correct response back 
+When I give a request Number and response One
+And I give a request Number and response Two
+And I give a request Number and response Three
+Then I get correct response back as Three
