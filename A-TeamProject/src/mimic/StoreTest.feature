@@ -19,7 +19,7 @@ Then I get correct response back is NULL
 
 Scenario: Learning multiple req/resp and assert if it can remember multiple responses. TF:1.04
 Given Mimicservice up and running
-When
+When I
 Then I get correct response back 
 
 Scenario: Learning multiple requests and checks that the last req/resp is the one and only true. TF:1.05
