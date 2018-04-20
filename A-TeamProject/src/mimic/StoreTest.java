@@ -9,8 +9,7 @@ class StoreTest {
 	Store e = new Store();
 	
 	/**Learn a response and assert that it remembers it correctly.
-	 TF:1.01*/
-	
+	 TF:1.01*/	
 	@Test
 	public void learnResponse() {
 		e.learnResponse("Number", "One");		
@@ -19,8 +18,6 @@ class StoreTest {
 	
 	/**Learn a response then unlearn it, then checking if the mindsweep was succesful.
 	TF:1.02 */
-	
-
 	@Test
 	public void getResponse() {
 		e.learnResponse("Number", "One");
@@ -29,8 +26,7 @@ class StoreTest {
 	}
 
 	/**Try to get a respond from a non-existing request.
-	TF:1.03 */
-	
+	TF:1.03 */	
 	@Test
 	public void getResponsenoargs() {
 		assertEquals(e.getResponse("asdasd"), null );
