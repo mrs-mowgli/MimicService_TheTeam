@@ -23,4 +23,8 @@ public class MimicCaller {
 		String requestToSend=host+request+"?learn="+response;
 		return service.executeGetRequest(requestToSend);
 	}
+	public String getResponse(){
+		String requestToSend=host+request;
+		return service.executeGetRequest(requestToSend);
+	}
 }
