@@ -59,7 +59,9 @@ class StoreTest {
 	public void lottaTest() {
 	awesome.funkar();
 	}
-
 	
+	@Test
+	public void downloadTest() {
+	}
 }
 
