@@ -27,4 +27,8 @@ public class MimicCaller {
 		String requestToSend=host+request;
 		return service.executeGetRequest(requestToSend);
 	}
+	public String unlearnAll(){
+		String requestToSend=host+"unlearnAll?";
+		return service.executeGetRequest(requestToSend);
+	}
 }
