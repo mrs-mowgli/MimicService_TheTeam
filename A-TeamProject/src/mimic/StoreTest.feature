@@ -20,7 +20,6 @@ Then I get correct response back as NULL
 
 Scenario: Learning multiple req/resp and assert if it can remember multiple responses. TF:1.04
 Given Mimicservice up and running
-<<<<<<< HEAD
 When	 I give a request Banan and response Skids
 And I give a request Laurel and response Hardy
 And I give a request Ful and response Bil
