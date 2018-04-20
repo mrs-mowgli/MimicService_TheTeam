@@ -9,28 +9,24 @@ class StoreTest {
 	Store e = new Store();
 	
 	/**Learn a response and assert that it remembers it correctly.
-	 TF:1.01*/
-	
+	 TF:1.01*/	
 	@Test
 	public void learnResponse() {
-		e.learnResponse("Äxx", "Zäta");		
-		assertEquals(e.getResponse("Äxx"), "Zäta");
+		e.learnResponse("Number", "One");		
+		assertEquals(e.getResponse("Number"), "One");
 	}
 	
 	/**Learn a response then unlearn it, then checking if the mindsweep was succesful.
 	TF:1.02 */
-	
-
 	@Test
 	public void getResponse() {
-		e.learnResponse("Äxx", "Zäta");
+		e.learnResponse("Number", "One");
 		e.unlearnAll();
-		assertEquals(e.getResponse("Äxx"), null);
+		assertEquals(e.getResponse("Number"), null);
 	}
 
 	/**Try to get a respond from a non-existing request.
-	TF:1.03 */
-	
+	TF:1.03 */	
 	@Test
 	public void getResponsenoargs() {
 		assertEquals(e.getResponse("asdasd"), null );
@@ -40,7 +36,6 @@ class StoreTest {
 	 TF:1.04*/
 	@Test
 	public void learnMultipleResponses() {
-		e.learnResponse("Äxx", "Zäta");
 		e.learnResponse("Banana", "Skids");
 		e.learnResponse("Laurel", "Hardy");
 		e.learnResponse("Ful", "bil");
@@ -51,13 +46,20 @@ class StoreTest {
 	TF:1.05 */
 	@Test
 	public void learnDifferentRequestWithSameResponses() {
-		e.learnResponse("Äxx", "Ett");
-		e.learnResponse("Äxx", "Två");
-		e.learnResponse("Äxx", "Tre");
-		assertEquals(e.getResponse("Äxx"), "Tre");
-		assertNotEquals(e.getResponse("Äxx"), "Två");
+
+		e.learnResponse("Number", "One");
+		e.learnResponse("Number", "Two");
+		e.learnResponse("Number", "Three");
+		assertEquals(e.getResponse("Number"), "Three");
+		assertNotEquals(e.getResponse("Number"), "Two");
+
 	}
-	
+
+	@Test
+	public void lottaTest() {
+	awesome.funkar();
+	}
+
 	
 }
 
