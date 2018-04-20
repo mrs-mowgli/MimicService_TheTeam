@@ -64,6 +64,6 @@ class StoreTest {
 	awesome.funkar();
 	}
 
-	
+	//Nancy testar to commit
 }
 
