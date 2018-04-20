@@ -1,15 +1,16 @@
 Feature: The mock should remember requests and responses
 
 Scenario: Learn a response and show it remembers it correctly. TF:2.01
-Given Mimicservice up and running
-When I give a request	 Number and response One
-Then I get correct response back is Number One
+
+Given Mimicservice is up and running
+When I give a request	as Number and response is One
+Then I get response is One
 
 Scenario: Learn a response then unlearn it. TF:1.02
-Given Mimicservice up and running
-And I give a request	Number and response One
-When Unlearn a request Number
-Then I get correct response back as NULL
+Given Mimicservice is up and running
+When I give a request	as Number and response is One
+And I unlearn all
+Then I get response is NULL
 
 Scenario: Try to get a respond from a non-existing request. TF:1.03
 Given Mimicservice up and running
@@ -19,6 +20,7 @@ Then I get correct response back as NULL
 
 Scenario: Learning multiple req/resp and assert if it can remember multiple responses. TF:1.04
 Given Mimicservice up and running
+<<<<<<< HEAD
 When	 I give a request Banan and response Skids
 And I give a request Laurel and response Hardy
 And I give a request Ful and response Bil
