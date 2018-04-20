@@ -6,29 +6,30 @@ Given Mimicservice is up and running
 When I give a request	as Number and response is One
 Then I get response is One
 
-Scenario: Learn a response then unlearn it. TF:1.02
+Scenario: Learn a response then unlearn it. TF:2.02
 Given Mimicservice is up and running
 When I give a request	as Number and response is One
 And I unlearn all
 Then I get response is NULL
 
-Scenario: Try to get a respond from a non-existing request. TF:1.03
+Scenario: Try to get a respond from a non-existing request. TF:2.03
 Given Mimicservice up and running
 When I give a non-existing request adasda 
 Then I get correct response back as NULL
 
 
-Scenario: Learning multiple req/resp and assert if it can remember multiple responses. TF:1.04
+Scenario: Learning multiple req/resp and assert if it can remember multiple responses. TF:2.04
 Given Mimicservice up and running
-And as learned request Banana and response Skids
-And as learned request Laurel and response Hardy
-And as learned request Ful and response Bil
+And has learned request Banana and response Skids
+And has learned request Laurel and response Hardy
+And has learned request Ful and response Bil
 When I give a request for Laurel
 Then I get correct response back as Hardy
 
-Scenario: Learning multiple requests and checks that the last req/resp is the one and only true. TF:1.05
+Scenario: Learning multiple requests and checks that the last req/resp is the one and only true. TF:2.05
 Given Mimicservice up and running
-When I give a request Number and response One
-And I give a request Number and response Two
-And I give a request Number and response Three
+And has learned request Number and response One
+And has learned request Number and response Two
+And has learned request Number and response Three
+When I give request Number
 Then I get correct response back as Three
