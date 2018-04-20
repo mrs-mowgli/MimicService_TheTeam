@@ -1,9 +1,9 @@
 Feature: The mock should remember requests and responses
 
 Scenario: Learn a response and show it remembers it correctly. TF:2.01
-Given Mimicservice up and running
-When I give a request	 and response Number One
-Then I get correct response back is Number One
+Given Mimicservice is up and running
+When I give a request	as Number and response is One
+Then I get response is One
 
 Scenario: Learn a response then unlearn it. TF:1.02
 Given Mimicservice is up and running
