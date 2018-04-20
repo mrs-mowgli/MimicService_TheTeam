@@ -12,7 +12,7 @@ public class HttpServiceCaller
 	/**
 	 * Executes a HTTP GET request
 	 * @param url
-	 * @return Text returned from the request or error message
+	 * @return Text returned from the request or error message stuff
 	 */
 	public String executeGetRequest(String url)
 	{
