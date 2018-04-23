@@ -11,7 +11,7 @@ class StoreTest {
 	//kommentar test 2
 	
 	/**Learn a response and assert that it remembers it correctly.
-	 TF:1.01*/	
+	 TF:1.01*/	//yahoo
 	@Test
 	public void learnResponse() {
 		e.learnResponse("Number", "One");		
