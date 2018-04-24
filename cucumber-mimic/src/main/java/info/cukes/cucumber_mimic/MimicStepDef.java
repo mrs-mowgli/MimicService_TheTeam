@@ -9,8 +9,6 @@ public class MimicStepDef {
 	private MimicCaller mc = new MimicCaller();
 	private int arg1;
 	private int arg2;
-	int value1 = arg1;
-	int value2 = arg2;
 	private String result;
 	
 	@Given("^Mimicservice is up and running$")
