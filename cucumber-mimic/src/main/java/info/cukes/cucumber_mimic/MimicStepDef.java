@@ -4,7 +4,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class MimicTest {
+public class MimicStepDef {
 	private final static String host="http://localhost:8080/";
 	private MimicCaller mc = new MimicCaller();
 	private int arg1;
