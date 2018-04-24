@@ -16,7 +16,7 @@ public class MimicTest {
 	@Given("^Mimicservice is up and running$")
 	public void mimicservice_is_up_and_running() throws Throwable {
 	if  (Runtime.getRuntime().exec("java -jar /Users/lotber/ITHS/Projektarbete/Sprint2/mimic.jar") != null);	
-	 // System.out.println("MimicService up-n-running");
+	 // if  (Runtime.getRuntime().exec("java -jar C:\\Users\\"+user+"\\eclipse-workspace\\cucumber-mimic\\mimic.jar !=null);
 	}
 	@Given("^has learned request \"([^\"]*)\" and response \"([^\"]*)\"$")
 	public void has_learned_request_and_response(String arg1, String arg2) throws Throwable {
