@@ -7,8 +7,7 @@ import cucumber.api.java.en.When;
 public class MimicStepDef {
 	private final static String host="http://localhost:8080/";
 	private MimicCaller mc = new MimicCaller();
-	private int arg1;
-	private int arg2;
+	
 	private String result;
 	
 	@Given("^Mimicservice is up and running$")
