@@ -1,4 +1,4 @@
-package info.cukes.cucumber_mimic_local;
+package MimicServiceProject.MimicService;
 
 public class MimicCaller {
 	private final static String host="http://localhost:8080/"; 
@@ -17,13 +17,14 @@ public class MimicCaller {
 		}
 		}
 	/**
-	 * Starts the MimicService, throws exception if the jar file not found. Change runtime path to get it to work on your cpu.
+	 * Starts the MimicService, throws exception if the jar file not found
 	 * @throws Exception
 	 */
 	public void startMimic() throws Exception{
-		String user = System.getProperty("user.name");
-		Runtime.getRuntime().exec("java -jar C:\\Users\\"+user+"\\eclipse-workspace\\Automatiseringsprojekt\\mimic.jar");
-		// Runtime.getRuntime().exec("java -jar C:\\Users\\"+user+"\\eclipse-workspace\\Automatiseringsprojekt\\mimic.jar");
+		
+		//String user = System.getProperty("user.name");C:\Users\Marcu\Desktop\Skola\Automatisering\Projektarbete\Sprint 2\Release Sprint 2
+		Runtime.getRuntime().exec("java -jar /Users/Marcu/Desktop/Skola/Automatisering/Projektarbete/Sprint2/mimic.jar");
+		// Runtime.getRuntime().exec("java -jar C:\\Users\\"+user+"\\eclipse-workspace\\cucumber-mimic\\mimic.jar");
 	}
 	/**
 	 * Learn the Mimic a new request and response with two variables, with the LearnNextResponse? command syntax.
@@ -67,32 +68,25 @@ public class MimicCaller {
 		service.executeGetRequest(requestToSend);
 	}
 	/**
-	 * reset the current state back to start
-	 */
-	public void resetState(){
-		String requestToSend=host+"resetState";
-		service.executeGetRequest(requestToSend);
-	}
-	/**
-	 * relearn sends the relearn request as url, no function atm?.
-	 */
-	public void relearn(){
-		String requestToSend=host+"relearn";
-		service.executeGetRequest(requestToSend);
-	}
-	/**
 	 * Learn the Mimic an equation
 	 * @param operator
 	 * @param answer
 	 * @param value1
 	 * @param value2
 	 */
-	public void learnEquation(String operator, String answer, String value1, String value2){
+	public void learnEquation(String operator, int value1, int value2, int answer){
 		String reqToSend=host+"LearnNextResponse?"+"text="+answer;
 		service.executeGetRequest(reqToSend);
 		String requestToSend=host+operator+"?value1="+value1+"&value2="+value2;
 		service.executeGetRequest(requestToSend);
 	}
-	
+	public String sendMathRequest(int value1, String operator, int value2) {
+		String reqToSend=host+operator+"?value1="+value1+"&value2="+value2;
+		return service.executeGetRequest(reqToSend);
+	}
+	public void resetState() {
+		String reqToSend=host+"resetState";
+		service.executeGetRequest(reqToSend);
+	}
 
 }
