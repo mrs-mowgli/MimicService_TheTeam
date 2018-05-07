@@ -52,7 +52,7 @@ public class MimicTestSteps {
 	}
 	@When("^I KillMimic$")
 	public void i_KillMimic() throws Throwable {
-	   mc.KillMimic();
+	   mc.killMimic();
 	   Thread.sleep(5000);
 	}
 
@@ -63,7 +63,7 @@ public class MimicTestSteps {
 	
 	@When("^I \"([^\"]*)\" answer \"([^\"]*)\" with values \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void i_answer_with_values_and(String arg1, String arg2, String arg3, String arg4) throws Throwable {
-	    mc.LearnEquation(arg1, arg2, arg3, arg4);
+	    mc.learnEquation(arg1, arg2, arg3, arg4);
 	}
 
 	/**
