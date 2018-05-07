@@ -62,21 +62,21 @@ public class MimicCaller {
 	/**
 	 * Stops Mimic from running with KillMimic command
 	 */
-	public void KillMimic(){
+	public void killMimic(){
 		String requestToSend=host+"KillMimic";
 		service.executeGetRequest(requestToSend);
 	}
 	/**
 	 * reset the current state back to start
 	 */
-	public void ResetState(){
+	public void resetState(){
 		String requestToSend=host+"resetState";
 		service.executeGetRequest(requestToSend);
 	}
 	/**
 	 * relearn sends the relearn request as url, no function atm?.
 	 */
-	public void Relearn(){
+	public void relearn(){
 		String requestToSend=host+"relearn";
 		service.executeGetRequest(requestToSend);
 	}
@@ -87,7 +87,7 @@ public class MimicCaller {
 	 * @param value1
 	 * @param value2
 	 */
-	public void LearnEquation(String operator, String answer, String value1, String value2){
+	public void learnEquation(String operator, String answer, String value1, String value2){
 		String reqToSend=host+"LearnNextResponse?"+"text="+answer;
 		service.executeGetRequest(reqToSend);
 		String requestToSend=host+operator+"?value1="+value1+"&value2="+value2;
