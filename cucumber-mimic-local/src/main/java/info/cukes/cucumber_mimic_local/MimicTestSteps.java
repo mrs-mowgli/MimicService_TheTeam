@@ -1,13 +1,13 @@
-package info.cukes.cucumber_mimic_local;
+package MimicServiceProject.MimicService;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class MimicTestSteps {
-//	private final static String host="http://localhost:8080/";
+	private final static String host="http://localhost:8080/";
 	private MimicCaller mc = new MimicCaller();
-//	private MimicSelenium ms = new MimicSelenium();
+	private MimicSelenium mimicSele = new MimicSelenium();
 	private int arg1;
 	private int arg2;
 	int value1 = arg1;
@@ -16,7 +16,7 @@ public class MimicTestSteps {
 	
 	@Given("^Mimicservice is up and running$")
 	public void mimicservice_is_up_and_running() throws Throwable {
-	if  (Runtime.getRuntime().exec("java -jar C:\\Users\\j-g_9\\eclipse-workspace\\Automatiseringsprojekt\\mimic.jar") != null);	
+	if  (Runtime.getRuntime().exec("java -jar /Users/Marcu/Desktop/Skola/Automatisering/Projektarbete/Sprint2/mimic.jar") != null);	
 	 // System.out.println("MimicService up-n-running");
 	}
 	@Given("^has learned request \"([^\"]*)\" and response \"([^\"]*)\"$")
@@ -43,16 +43,16 @@ public class MimicTestSteps {
 	public void i_use_unlearnAll_command() throws Throwable {
 	    mc.unlearnAll();
 	}
-	@Then("^I get response NULL$")
+	@Then("^I get response Form$")
 	public void i_get_response_NULL() throws Throwable {
 		System.out.println("Result= "+ result);
-		if (!result.contains("Paste or type")) {
-			System.out.println("Inte NULL");
-		} 
+		if (!result.contains("json")) {
+			throw new Exception();
+		}
 	}
 	@When("^I KillMimic$")
 	public void i_KillMimic() throws Throwable {
-	   mc.killMimic();
+	   mc.KillMimic();
 	   Thread.sleep(5000);
 	}
 
@@ -60,14 +60,7 @@ public class MimicTestSteps {
 	public void start_Mimic() throws Throwable {
 	    mc.startMimic();
 	}
-	
-	@When("^I \"([^\"]*)\" answer \"([^\"]*)\" with values \"([^\"]*)\" and \"([^\"]*)\"$")
-	public void i_answer_with_values_and(String arg1, String arg2, String arg3, String arg4) throws Throwable {
-	    mc.learnEquation(arg1, arg2, arg3, arg4);
-	}
-
-	/**
-	
+	/*
 	@When("^In URL I give request \"([^\"]*)\"$")
 	public void i_give_request_in_in_URL(String arg1) throws Throwable {
 		mimicSele.startDriver();
@@ -93,6 +86,18 @@ public class MimicTestSteps {
 	public void i_get_response_form_on_the_page() throws Throwable {
 	    mimicSele.checkResponse("Paste or type");
 	    mimicSele.closeBrowser();
-	}  */
-	
+	}
+	*/
+	@When("^I \"([^\"]*)\" values (\\d+) and (\\d+) with answer (\\d+)$")
+	public void i_values_and_and(String arg1, int arg2, int arg3, int arg4) throws Throwable {
+		mc.learnEquation(arg1, arg2, arg3, arg4);
+	}
+	@Given("^Mimic has no learned requests$")
+	public void mimic_has_no_learned_requests() throws Throwable {
+		mc.unlearnAll();
+	}
+	@When("^I ask for (\\d+) \"([^\"]*)\" (\\d+)$")
+	public void i_ask_for(int arg1, String arg2, int arg3) throws Throwable {
+	    result = mc.sendMathRequest(arg1, arg2, arg3);
+	}
 }
