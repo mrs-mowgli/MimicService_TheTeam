@@ -8,9 +8,7 @@ Feature: Unlearn the previously learned response in the middle of a sequence
     And I give request "Number"
     And has learned request "Number" and response "3"
     And I give request "Number"
-    And I give request "Number"
     And has learned request "Number" and response "4"
-    And I give request "Number"
     And I give request "Number"
     When I resetState
     And I give request "Number"
