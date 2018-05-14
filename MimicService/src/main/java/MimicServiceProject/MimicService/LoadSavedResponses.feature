@@ -7,7 +7,6 @@ Feature: Mimic saves responses in a brain file
   And Mimic has no learned requests
   And has learned request "Banana" and response "Skids"
   And has learned request "Banana" and response "Fruit"
-  And has learned request "Banana" and response "Yellow"
 	And has learned request "Laurel" and response "Hardy"
 	And has learned request "Laurel" and response "Bengt"
 	And has learned request "Ful" and response "Bil"
@@ -15,10 +14,11 @@ Feature: Mimic saves responses in a brain file
 	When I KillMimic
 	And Start Mimic
 	And I give request <request>
+	And I give request <request>
 	Then I get response <response>
 	
 	Examples:
 	|	request	|	response	|
-	|	"Banana"|	"Yellow"	|
-	|	"Hardy"	|	"Bengt"		|
+	|	"Banana"|	"Fruit"	|
+	|	"Laurel"	|	"Bengt"		|
 	|	"Ful"		|	"Kul"			|

@@ -22,7 +22,7 @@ public class MimicCaller {
 	 */
 	public void startMimic() throws Exception{
 		
-		Runtime.getRuntime().exec("java -jar /Users/Marcu/Desktop/Skola/Automatisering/Projektarbete/sprint4/mimic.jar");
+		Runtime.getRuntime().exec("java -jar /Users/Marcu/Desktop/Skola/Automatisering/Projektarbete/sprint5/mimic.jar");
 
 	}
 	/**

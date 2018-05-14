@@ -38,7 +38,7 @@ formatter.match({
   "location": "MimicTestSteps.mimicservice_is_up_and_running()"
 });
 formatter.result({
-  "duration": 697379344,
+  "duration": 281177249,
   "status": "passed"
 });
 formatter.match({
@@ -55,7 +55,7 @@ formatter.match({
   "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
 });
 formatter.result({
-  "duration": 1693647452,
+  "duration": 304421354,
   "status": "passed"
 });
 formatter.match({
@@ -68,7 +68,7 @@ formatter.match({
   "location": "MimicTestSteps.i_give_request(String)"
 });
 formatter.result({
-  "duration": 5187060,
+  "duration": 16380277,
   "status": "passed"
 });
 formatter.match({
@@ -81,7 +81,7 @@ formatter.match({
   "location": "MimicTestSteps.i_get_response(String)"
 });
 formatter.result({
-  "duration": 132549,
+  "duration": 137063,
   "status": "passed"
 });
 formatter.scenario({
@@ -111,7 +111,7 @@ formatter.match({
   "location": "MimicTestSteps.mimicservice_is_up_and_running()"
 });
 formatter.result({
-  "duration": 7902470,
+  "duration": 8521716,
   "status": "passed"
 });
 formatter.match({
@@ -124,14 +124,14 @@ formatter.match({
   "location": "MimicTestSteps.i_give_request(String)"
 });
 formatter.result({
-  "duration": 246154333,
+  "duration": 133531924,
   "status": "passed"
 });
 formatter.match({
   "location": "MimicTestSteps.i_get_response_NULL()"
 });
 formatter.result({
-  "duration": 243759,
+  "duration": 219547,
   "status": "passed"
 });
 formatter.scenario({
@@ -176,7 +176,7 @@ formatter.match({
   "location": "MimicTestSteps.mimicservice_is_up_and_running()"
 });
 formatter.result({
-  "duration": 8788046,
+  "duration": 7278710,
   "status": "passed"
 });
 formatter.match({
@@ -193,7 +193,7 @@ formatter.match({
   "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
 });
 formatter.result({
-  "duration": 422429440,
+  "duration": 239286812,
   "status": "passed"
 });
 formatter.match({
@@ -210,7 +210,7 @@ formatter.match({
   "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
 });
 formatter.result({
-  "duration": 211725218,
+  "duration": 173382419,
   "status": "passed"
 });
 formatter.match({
@@ -227,7 +227,7 @@ formatter.match({
   "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
 });
 formatter.result({
-  "duration": 126573302,
+  "duration": 232690136,
   "status": "passed"
 });
 formatter.match({
@@ -240,7 +240,7 @@ formatter.match({
   "location": "MimicTestSteps.i_give_request(String)"
 });
 formatter.result({
-  "duration": 116757283,
+  "duration": 68977234,
   "status": "passed"
 });
 formatter.match({
@@ -253,7 +253,7 @@ formatter.match({
   "location": "MimicTestSteps.i_get_response(String)"
 });
 formatter.result({
-  "duration": 97667,
+  "duration": 101771,
   "status": "passed"
 });
 formatter.uri("MimicServiceProject/MimicService/LearnToRespondToUndefined.feature");
@@ -311,14 +311,14 @@ formatter.match({
   "location": "MimicTestSteps.mimicservice_is_up_and_running()"
 });
 formatter.result({
-  "duration": 8310377,
+  "duration": 17393888,
   "status": "passed"
 });
 formatter.match({
   "location": "MimicTestSteps.mimic_has_no_learned_requests()"
 });
 formatter.result({
-  "duration": 321456989,
+  "duration": 187787181,
   "status": "passed"
 });
 formatter.match({
@@ -343,7 +343,7 @@ formatter.match({
   "location": "MimicTestSteps.i_values_and_and(String,int,int,int)"
 });
 formatter.result({
-  "duration": 318809291,
+  "duration": 255381472,
   "status": "passed"
 });
 formatter.match({
@@ -368,7 +368,7 @@ formatter.match({
   "location": "MimicTestSteps.i_values_and_and(String,int,int,int)"
 });
 formatter.result({
-  "duration": 222600810,
+  "duration": 381777906,
   "status": "passed"
 });
 formatter.match({
@@ -393,7 +393,7 @@ formatter.match({
   "location": "MimicTestSteps.i_values_and_and(String,int,int,int)"
 });
 formatter.result({
-  "duration": 109698121,
+  "duration": 145691559,
   "status": "passed"
 });
 formatter.match({
@@ -414,7 +414,7 @@ formatter.match({
   "location": "MimicTestSteps.i_ask_for(int,String,int)"
 });
 formatter.result({
-  "duration": 97348485,
+  "duration": 61476515,
   "status": "passed"
 });
 formatter.match({
@@ -427,7 +427,7 @@ formatter.match({
   "location": "MimicTestSteps.i_get_response(String)"
 });
 formatter.result({
-  "duration": 105055,
+  "duration": 97257,
   "status": "passed"
 });
 formatter.scenario({
@@ -477,14 +477,14 @@ formatter.match({
   "location": "MimicTestSteps.mimicservice_is_up_and_running()"
 });
 formatter.result({
-  "duration": 8980099,
+  "duration": 7181863,
   "status": "passed"
 });
 formatter.match({
   "location": "MimicTestSteps.mimic_has_no_learned_requests()"
 });
 formatter.result({
-  "duration": 158561542,
+  "duration": 129394997,
   "status": "passed"
 });
 formatter.match({
@@ -509,7 +509,7 @@ formatter.match({
   "location": "MimicTestSteps.i_values_and_and(String,int,int,int)"
 });
 formatter.result({
-  "duration": 218000988,
+  "duration": 235015284,
   "status": "passed"
 });
 formatter.match({
@@ -534,7 +534,7 @@ formatter.match({
   "location": "MimicTestSteps.i_values_and_and(String,int,int,int)"
 });
 formatter.result({
-  "duration": 135819730,
+  "duration": 164077309,
   "status": "passed"
 });
 formatter.match({
@@ -559,7 +559,7 @@ formatter.match({
   "location": "MimicTestSteps.i_values_and_and(String,int,int,int)"
 });
 formatter.result({
-  "duration": 77127977,
+  "duration": 43796189,
   "status": "passed"
 });
 formatter.match({
@@ -580,7 +580,7 @@ formatter.match({
   "location": "MimicTestSteps.i_ask_for(int,String,int)"
 });
 formatter.result({
-  "duration": 105388839,
+  "duration": 29358598,
   "status": "passed"
 });
 formatter.match({
@@ -593,7 +593,7 @@ formatter.match({
   "location": "MimicTestSteps.i_get_response(String)"
 });
 formatter.result({
-  "duration": 121470,
+  "duration": 92333,
   "status": "passed"
 });
 formatter.scenario({
@@ -643,14 +643,14 @@ formatter.match({
   "location": "MimicTestSteps.mimicservice_is_up_and_running()"
 });
 formatter.result({
-  "duration": 8547570,
+  "duration": 7044800,
   "status": "passed"
 });
 formatter.match({
   "location": "MimicTestSteps.mimic_has_no_learned_requests()"
 });
 formatter.result({
-  "duration": 137435762,
+  "duration": 177121698,
   "status": "passed"
 });
 formatter.match({
@@ -675,7 +675,7 @@ formatter.match({
   "location": "MimicTestSteps.i_values_and_and(String,int,int,int)"
 });
 formatter.result({
-  "duration": 188997768,
+  "duration": 145843396,
   "status": "passed"
 });
 formatter.match({
@@ -700,7 +700,7 @@ formatter.match({
   "location": "MimicTestSteps.i_values_and_and(String,int,int,int)"
 });
 formatter.result({
-  "duration": 125844487,
+  "duration": 219074512,
   "status": "passed"
 });
 formatter.match({
@@ -725,7 +725,7 @@ formatter.match({
   "location": "MimicTestSteps.i_values_and_and(String,int,int,int)"
 });
 formatter.result({
-  "duration": 35887153,
+  "duration": 89645454,
   "status": "passed"
 });
 formatter.match({
@@ -746,7 +746,7 @@ formatter.match({
   "location": "MimicTestSteps.i_ask_for(int,String,int)"
 });
 formatter.result({
-  "duration": 24253611,
+  "duration": 45085158,
   "status": "passed"
 });
 formatter.match({
@@ -759,7 +759,7 @@ formatter.match({
   "location": "MimicTestSteps.i_get_response(String)"
 });
 formatter.result({
-  "duration": 123520,
+  "duration": 104644,
   "status": "passed"
 });
 formatter.scenario({
@@ -809,14 +809,14 @@ formatter.match({
   "location": "MimicTestSteps.mimicservice_is_up_and_running()"
 });
 formatter.result({
-  "duration": 7523700,
+  "duration": 7275427,
   "status": "passed"
 });
 formatter.match({
   "location": "MimicTestSteps.mimic_has_no_learned_requests()"
 });
 formatter.result({
-  "duration": 149599090,
+  "duration": 162725144,
   "status": "passed"
 });
 formatter.match({
@@ -841,7 +841,7 @@ formatter.match({
   "location": "MimicTestSteps.i_values_and_and(String,int,int,int)"
 });
 formatter.result({
-  "duration": 148012195,
+  "duration": 209792792,
   "status": "passed"
 });
 formatter.match({
@@ -866,7 +866,7 @@ formatter.match({
   "location": "MimicTestSteps.i_values_and_and(String,int,int,int)"
 });
 formatter.result({
-  "duration": 148790253,
+  "duration": 158657569,
   "status": "passed"
 });
 formatter.match({
@@ -891,7 +891,7 @@ formatter.match({
   "location": "MimicTestSteps.i_values_and_and(String,int,int,int)"
 });
 formatter.result({
-  "duration": 152629663,
+  "duration": 64024494,
   "status": "passed"
 });
 formatter.match({
@@ -912,7 +912,7 @@ formatter.match({
   "location": "MimicTestSteps.i_ask_for(int,String,int)"
 });
 formatter.result({
-  "duration": 62644835,
+  "duration": 13781412,
   "status": "passed"
 });
 formatter.match({
@@ -925,7 +925,7 @@ formatter.match({
   "location": "MimicTestSteps.i_get_response(String)"
 });
 formatter.result({
-  "duration": 102182,
+  "duration": 85767,
   "status": "passed"
 });
 formatter.scenario({
@@ -975,14 +975,14 @@ formatter.match({
   "location": "MimicTestSteps.mimicservice_is_up_and_running()"
 });
 formatter.result({
-  "duration": 8344027,
+  "duration": 9622325,
   "status": "passed"
 });
 formatter.match({
   "location": "MimicTestSteps.mimic_has_no_learned_requests()"
 });
 formatter.result({
-  "duration": 214977802,
+  "duration": 107260941,
   "status": "passed"
 });
 formatter.match({
@@ -1007,7 +1007,7 @@ formatter.match({
   "location": "MimicTestSteps.i_values_and_and(String,int,int,int)"
 });
 formatter.result({
-  "duration": 208674948,
+  "duration": 172839501,
   "status": "passed"
 });
 formatter.match({
@@ -1032,7 +1032,7 @@ formatter.match({
   "location": "MimicTestSteps.i_values_and_and(String,int,int,int)"
 });
 formatter.result({
-  "duration": 118433639,
+  "duration": 196282224,
   "status": "passed"
 });
 formatter.match({
@@ -1057,7 +1057,7 @@ formatter.match({
   "location": "MimicTestSteps.i_values_and_and(String,int,int,int)"
 });
 formatter.result({
-  "duration": 33181182,
+  "duration": 53780870,
   "status": "passed"
 });
 formatter.match({
@@ -1078,7 +1078,7 @@ formatter.match({
   "location": "MimicTestSteps.i_ask_for(int,String,int)"
 });
 formatter.result({
-  "duration": 44724443,
+  "duration": 33198828,
   "status": "passed"
 });
 formatter.match({
@@ -1091,7 +1091,7 @@ formatter.match({
   "location": "MimicTestSteps.i_get_response(String)"
 });
 formatter.result({
-  "duration": 108748,
+  "duration": 90281,
   "status": "passed"
 });
 formatter.scenario({
@@ -1141,14 +1141,14 @@ formatter.match({
   "location": "MimicTestSteps.mimicservice_is_up_and_running()"
 });
 formatter.result({
-  "duration": 8391630,
+  "duration": 7386226,
   "status": "passed"
 });
 formatter.match({
   "location": "MimicTestSteps.mimic_has_no_learned_requests()"
 });
 formatter.result({
-  "duration": 134396161,
+  "duration": 73506884,
   "status": "passed"
 });
 formatter.match({
@@ -1173,7 +1173,7 @@ formatter.match({
   "location": "MimicTestSteps.i_values_and_and(String,int,int,int)"
 });
 formatter.result({
-  "duration": 345114745,
+  "duration": 269874465,
   "status": "passed"
 });
 formatter.match({
@@ -1198,7 +1198,7 @@ formatter.match({
   "location": "MimicTestSteps.i_values_and_and(String,int,int,int)"
 });
 formatter.result({
-  "duration": 203343028,
+  "duration": 191196525,
   "status": "passed"
 });
 formatter.match({
@@ -1223,7 +1223,7 @@ formatter.match({
   "location": "MimicTestSteps.i_values_and_and(String,int,int,int)"
 });
 formatter.result({
-  "duration": 94539510,
+  "duration": 78277830,
   "status": "passed"
 });
 formatter.match({
@@ -1244,7 +1244,7 @@ formatter.match({
   "location": "MimicTestSteps.i_ask_for(int,String,int)"
 });
 formatter.result({
-  "duration": 50253752,
+  "duration": 17115658,
   "status": "passed"
 });
 formatter.match({
@@ -1257,7 +1257,7 @@ formatter.match({
   "location": "MimicTestSteps.i_get_response(String)"
 });
 formatter.result({
-  "duration": 100540,
+  "duration": 87408,
   "status": "passed"
 });
 formatter.scenario({
@@ -1307,14 +1307,14 @@ formatter.match({
   "location": "MimicTestSteps.mimicservice_is_up_and_running()"
 });
 formatter.result({
-  "duration": 7765818,
+  "duration": 6600781,
   "status": "passed"
 });
 formatter.match({
   "location": "MimicTestSteps.mimic_has_no_learned_requests()"
 });
 formatter.result({
-  "duration": 178906803,
+  "duration": 124782043,
   "status": "passed"
 });
 formatter.match({
@@ -1339,7 +1339,7 @@ formatter.match({
   "location": "MimicTestSteps.i_values_and_and(String,int,int,int)"
 });
 formatter.result({
-  "duration": 186338990,
+  "duration": 206781507,
   "status": "passed"
 });
 formatter.match({
@@ -1364,7 +1364,7 @@ formatter.match({
   "location": "MimicTestSteps.i_values_and_and(String,int,int,int)"
 });
 formatter.result({
-  "duration": 145298836,
+  "duration": 137466539,
   "status": "passed"
 });
 formatter.match({
@@ -1389,7 +1389,7 @@ formatter.match({
   "location": "MimicTestSteps.i_values_and_and(String,int,int,int)"
 });
 formatter.result({
-  "duration": 54058690,
+  "duration": 95049189,
   "status": "passed"
 });
 formatter.match({
@@ -1410,7 +1410,7 @@ formatter.match({
   "location": "MimicTestSteps.i_ask_for(int,String,int)"
 });
 formatter.result({
-  "duration": 24700093,
+  "duration": 76886270,
   "status": "passed"
 });
 formatter.match({
@@ -1423,7 +1423,7 @@ formatter.match({
   "location": "MimicTestSteps.i_get_response(String)"
 });
 formatter.result({
-  "duration": 95615,
+  "duration": 108337,
   "status": "passed"
 });
 formatter.uri("MimicServiceProject/MimicService/LoadSavedResponses.feature");
@@ -1464,37 +1464,37 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "has learned request \"Banana\" and response \"Yellow\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 11,
   "name": "has learned request \"Laurel\" and response \"Hardy\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 12,
+  "line": 11,
   "name": "has learned request \"Laurel\" and response \"Bengt\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 13,
+  "line": 12,
   "name": "has learned request \"Ful\" and response \"Bil\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 14,
+  "line": 13,
   "name": "has learned request \"Ful\" and response \"Kul\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
+  "line": 14,
   "name": "I KillMimic",
   "keyword": "When "
 });
 formatter.step({
-  "line": 16,
+  "line": 15,
   "name": "Start Mimic",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 16,
+  "name": "I give request \u003crequest\u003e",
   "keyword": "And "
 });
 formatter.step({
@@ -1524,14 +1524,14 @@ formatter.examples({
     {
       "cells": [
         "\"Banana\"",
-        "\"Yellow\""
+        "\"Fruit\""
       ],
       "line": 22,
       "id": "mimic-saves-responses-in-a-brain-file;add-multiple-request-with-multiple-responses,-then-killmimic;;2"
     },
     {
       "cells": [
-        "\"Hardy\"",
+        "\"Laurel\"",
         "\"Bengt\""
       ],
       "line": 23,
@@ -1578,37 +1578,40 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "has learned request \"Banana\" and response \"Yellow\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 11,
   "name": "has learned request \"Laurel\" and response \"Hardy\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 12,
+  "line": 11,
   "name": "has learned request \"Laurel\" and response \"Bengt\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 13,
+  "line": 12,
   "name": "has learned request \"Ful\" and response \"Bil\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 14,
+  "line": 13,
   "name": "has learned request \"Ful\" and response \"Kul\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
+  "line": 14,
   "name": "I KillMimic",
   "keyword": "When "
 });
 formatter.step({
-  "line": 16,
+  "line": 15,
   "name": "Start Mimic",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 16,
+  "name": "I give request \"Banana\"",
+  "matchedColumns": [
+    0
+  ],
   "keyword": "And "
 });
 formatter.step({
@@ -1621,7 +1624,7 @@ formatter.step({
 });
 formatter.step({
   "line": 18,
-  "name": "I get response \"Yellow\"",
+  "name": "I get response \"Fruit\"",
   "matchedColumns": [
     1
   ],
@@ -1631,14 +1634,14 @@ formatter.match({
   "location": "MimicTestSteps.mimicservice_is_up_and_running()"
 });
 formatter.result({
-  "duration": 8848370,
+  "duration": 7428494,
   "status": "passed"
 });
 formatter.match({
   "location": "MimicTestSteps.mimic_has_no_learned_requests()"
 });
 formatter.result({
-  "duration": 165027723,
+  "duration": 147026079,
   "status": "passed"
 });
 formatter.match({
@@ -1655,7 +1658,7 @@ formatter.match({
   "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
 });
 formatter.result({
-  "duration": 224926780,
+  "duration": 327567380,
   "status": "passed"
 });
 formatter.match({
@@ -1672,24 +1675,7 @@ formatter.match({
   "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
 });
 formatter.result({
-  "duration": 152676035,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Banana",
-      "offset": 21
-    },
-    {
-      "val": "Yellow",
-      "offset": 43
-    }
-  ],
-  "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
-});
-formatter.result({
-  "duration": 131790320,
+  "duration": 118210398,
   "status": "passed"
 });
 formatter.match({
@@ -1706,7 +1692,7 @@ formatter.match({
   "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
 });
 formatter.result({
-  "duration": 79778549,
+  "duration": 58973677,
   "status": "passed"
 });
 formatter.match({
@@ -1723,7 +1709,7 @@ formatter.match({
   "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
 });
 formatter.result({
-  "duration": 115696480,
+  "duration": 12302443,
   "status": "passed"
 });
 formatter.match({
@@ -1740,7 +1726,7 @@ formatter.match({
   "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
 });
 formatter.result({
-  "duration": 77327827,
+  "duration": 46300259,
   "status": "passed"
 });
 formatter.match({
@@ -1757,21 +1743,21 @@ formatter.match({
   "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
 });
 formatter.result({
-  "duration": 85147813,
+  "duration": 89768564,
   "status": "passed"
 });
 formatter.match({
   "location": "MimicTestSteps.i_KillMimic()"
 });
 formatter.result({
-  "duration": 5011031942,
+  "duration": 5032924292,
   "status": "passed"
 });
 formatter.match({
   "location": "MimicTestSteps.start_Mimic()"
 });
 formatter.result({
-  "duration": 5505507,
+  "duration": 19630397,
   "status": "passed"
 });
 formatter.match({
@@ -1784,22 +1770,34 @@ formatter.match({
   "location": "MimicTestSteps.i_give_request(String)"
 });
 formatter.result({
-  "duration": 730081216,
+  "duration": 667406835,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Yellow",
+      "val": "Banana",
+      "offset": 16
+    }
+  ],
+  "location": "MimicTestSteps.i_give_request(String)"
+});
+formatter.result({
+  "duration": 3941592,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Fruit",
       "offset": 16
     }
   ],
   "location": "MimicTestSteps.i_get_response(String)"
 });
 formatter.result({
-  "duration": 810068,
-  "error_message": "java.lang.Exception\r\n\tat MimicServiceProject.MimicService.MimicTestSteps.i_get_response(MimicTestSteps.java:63)\r\n\tat ✽.Then I get response \"Yellow\"(MimicServiceProject/MimicService/LoadSavedResponses.feature:18)\r\n",
-  "status": "failed"
+  "duration": 91512,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 23,
@@ -1831,42 +1829,45 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "has learned request \"Banana\" and response \"Yellow\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 11,
   "name": "has learned request \"Laurel\" and response \"Hardy\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 12,
+  "line": 11,
   "name": "has learned request \"Laurel\" and response \"Bengt\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 13,
+  "line": 12,
   "name": "has learned request \"Ful\" and response \"Bil\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 14,
+  "line": 13,
   "name": "has learned request \"Ful\" and response \"Kul\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
+  "line": 14,
   "name": "I KillMimic",
   "keyword": "When "
 });
 formatter.step({
-  "line": 16,
+  "line": 15,
   "name": "Start Mimic",
   "keyword": "And "
 });
 formatter.step({
+  "line": 16,
+  "name": "I give request \"Laurel\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "And "
+});
+formatter.step({
   "line": 17,
-  "name": "I give request \"Hardy\"",
+  "name": "I give request \"Laurel\"",
   "matchedColumns": [
     0
   ],
@@ -1884,14 +1885,14 @@ formatter.match({
   "location": "MimicTestSteps.mimicservice_is_up_and_running()"
 });
 formatter.result({
-  "duration": 9152043,
+  "duration": 6612271,
   "status": "passed"
 });
 formatter.match({
   "location": "MimicTestSteps.mimic_has_no_learned_requests()"
 });
 formatter.result({
-  "duration": 42558928,
+  "duration": 57130300,
   "status": "passed"
 });
 formatter.match({
@@ -1908,7 +1909,7 @@ formatter.match({
   "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
 });
 formatter.result({
-  "duration": 93683481,
+  "duration": 87657627,
   "status": "passed"
 });
 formatter.match({
@@ -1925,24 +1926,7 @@ formatter.match({
   "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
 });
 formatter.result({
-  "duration": 88647437,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Banana",
-      "offset": 21
-    },
-    {
-      "val": "Yellow",
-      "offset": 43
-    }
-  ],
-  "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
-});
-formatter.result({
-  "duration": 56123256,
+  "duration": 43771567,
   "status": "passed"
 });
 formatter.match({
@@ -1959,7 +1943,7 @@ formatter.match({
   "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
 });
 formatter.result({
-  "duration": 80635809,
+  "duration": 18021752,
   "status": "passed"
 });
 formatter.match({
@@ -1976,7 +1960,7 @@ formatter.match({
   "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
 });
 formatter.result({
-  "duration": 122105618,
+  "duration": 23769786,
   "status": "passed"
 });
 formatter.match({
@@ -1993,7 +1977,7 @@ formatter.match({
   "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
 });
 formatter.result({
-  "duration": 110999400,
+  "duration": 30338969,
   "status": "passed"
 });
 formatter.match({
@@ -2010,34 +1994,47 @@ formatter.match({
   "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
 });
 formatter.result({
-  "duration": 103188031,
+  "duration": 76922382,
   "status": "passed"
 });
 formatter.match({
   "location": "MimicTestSteps.i_KillMimic()"
 });
 formatter.result({
-  "duration": 5052649484,
+  "duration": 5058725403,
   "status": "passed"
 });
 formatter.match({
   "location": "MimicTestSteps.start_Mimic()"
 });
 formatter.result({
-  "duration": 5129609,
+  "duration": 5203475,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Hardy",
+      "val": "Laurel",
       "offset": 16
     }
   ],
   "location": "MimicTestSteps.i_give_request(String)"
 });
 formatter.result({
-  "duration": 735633915,
+  "duration": 677904066,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Laurel",
+      "offset": 16
+    }
+  ],
+  "location": "MimicTestSteps.i_give_request(String)"
+});
+formatter.result({
+  "duration": 3923535,
   "status": "passed"
 });
 formatter.match({
@@ -2050,9 +2047,8 @@ formatter.match({
   "location": "MimicTestSteps.i_get_response(String)"
 });
 formatter.result({
-  "duration": 389030,
-  "error_message": "java.lang.Exception\r\n\tat MimicServiceProject.MimicService.MimicTestSteps.i_get_response(MimicTestSteps.java:63)\r\n\tat ✽.Then I get response \"Bengt\"(MimicServiceProject/MimicService/LoadSavedResponses.feature:18)\r\n",
-  "status": "failed"
+  "duration": 72224,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 24,
@@ -2084,37 +2080,40 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "has learned request \"Banana\" and response \"Yellow\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 11,
   "name": "has learned request \"Laurel\" and response \"Hardy\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 12,
+  "line": 11,
   "name": "has learned request \"Laurel\" and response \"Bengt\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 13,
+  "line": 12,
   "name": "has learned request \"Ful\" and response \"Bil\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 14,
+  "line": 13,
   "name": "has learned request \"Ful\" and response \"Kul\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
+  "line": 14,
   "name": "I KillMimic",
   "keyword": "When "
 });
 formatter.step({
-  "line": 16,
+  "line": 15,
   "name": "Start Mimic",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 16,
+  "name": "I give request \"Ful\"",
+  "matchedColumns": [
+    0
+  ],
   "keyword": "And "
 });
 formatter.step({
@@ -2137,14 +2136,14 @@ formatter.match({
   "location": "MimicTestSteps.mimicservice_is_up_and_running()"
 });
 formatter.result({
-  "duration": 9675263,
+  "duration": 7994393,
   "status": "passed"
 });
 formatter.match({
   "location": "MimicTestSteps.mimic_has_no_learned_requests()"
 });
 formatter.result({
-  "duration": 113665975,
+  "duration": 225579266,
   "status": "passed"
 });
 formatter.match({
@@ -2161,7 +2160,7 @@ formatter.match({
   "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
 });
 formatter.result({
-  "duration": 39093775,
+  "duration": 25541348,
   "status": "passed"
 });
 formatter.match({
@@ -2178,24 +2177,7 @@ formatter.match({
   "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
 });
 formatter.result({
-  "duration": 43257375,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Banana",
-      "offset": 21
-    },
-    {
-      "val": "Yellow",
-      "offset": 43
-    }
-  ],
-  "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
-});
-formatter.result({
-  "duration": 30542101,
+  "duration": 21951033,
   "status": "passed"
 });
 formatter.match({
@@ -2212,7 +2194,7 @@ formatter.match({
   "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
 });
 formatter.result({
-  "duration": 96535545,
+  "duration": 37504417,
   "status": "passed"
 });
 formatter.match({
@@ -2229,7 +2211,7 @@ formatter.match({
   "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
 });
 formatter.result({
-  "duration": 84561806,
+  "duration": 11014296,
   "status": "passed"
 });
 formatter.match({
@@ -2246,7 +2228,7 @@ formatter.match({
   "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
 });
 formatter.result({
-  "duration": 144379200,
+  "duration": 58986398,
   "status": "passed"
 });
 formatter.match({
@@ -2263,21 +2245,21 @@ formatter.match({
   "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
 });
 formatter.result({
-  "duration": 83494847,
+  "duration": 75569397,
   "status": "passed"
 });
 formatter.match({
   "location": "MimicTestSteps.i_KillMimic()"
 });
 formatter.result({
-  "duration": 5046299439,
+  "duration": 5049988243,
   "status": "passed"
 });
 formatter.match({
   "location": "MimicTestSteps.start_Mimic()"
 });
 formatter.result({
-  "duration": 4883388,
+  "duration": 5267903,
   "status": "passed"
 });
 formatter.match({
@@ -2290,7 +2272,20 @@ formatter.match({
   "location": "MimicTestSteps.i_give_request(String)"
 });
 formatter.result({
-  "duration": 769361298,
+  "duration": 679341588,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Ful",
+      "offset": 16
+    }
+  ],
+  "location": "MimicTestSteps.i_give_request(String)"
+});
+formatter.result({
+  "duration": 4853431,
   "status": "passed"
 });
 formatter.match({
@@ -2303,23 +2298,503 @@ formatter.match({
   "location": "MimicTestSteps.i_get_response(String)"
 });
 formatter.result({
-  "duration": 374667,
-  "error_message": "java.lang.Exception\r\n\tat MimicServiceProject.MimicService.MimicTestSteps.i_get_response(MimicTestSteps.java:63)\r\n\tat ✽.Then I get response \"Kul\"(MimicServiceProject/MimicService/LoadSavedResponses.feature:18)\r\n",
-  "status": "failed"
+  "duration": 101361,
+  "status": "passed"
 });
-formatter.uri("MimicServiceProject/MimicService/ResponseNoValueParam.feature");
+formatter.uri("MimicServiceProject/MimicService/UnlearnAllResponses.feature");
 formatter.feature({
   "line": 1,
-  "name": "Entering a request with no parameter values",
+  "name": "As a Tester I would like the mock to unlearn all responses so that I can rerun all the tests without restarting the service",
   "description": "",
-  "id": "entering-a-request-with-no-parameter-values",
+  "id": "as-a-tester-i-would-like-the-mock-to-unlearn-all-responses-so-that-i-can-rerun-all-the-tests-without-restarting-the-service",
+  "keyword": "Feature"
+});
+formatter.scenarioOutline({
+  "line": 5,
+  "name": "Learning multiple req/resp and verify it unlearn all",
+  "description": "",
+  "id": "as-a-tester-i-would-like-the-mock-to-unlearn-all-responses-so-that-i-can-rerun-all-the-tests-without-restarting-the-service;learning-multiple-req/resp-and-verify-it-unlearn-all",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 7,
+  "name": "Mimicservice is up and running",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 8,
+  "name": "has learned request \"Banana\" and response \"Skids\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "has learned request \"Laurel\" and response \"Hardy\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "has learned request \"Ful\" and response \"Bil\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 11,
+  "name": "I use unlearnAll command",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 12,
+  "name": "I give request \u003crequest\u003e",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 13,
+  "name": "I get response Form",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 15,
+  "name": "",
+  "description": "",
+  "id": "as-a-tester-i-would-like-the-mock-to-unlearn-all-responses-so-that-i-can-rerun-all-the-tests-without-restarting-the-service;learning-multiple-req/resp-and-verify-it-unlearn-all;",
+  "rows": [
+    {
+      "cells": [
+        "request"
+      ],
+      "line": 16,
+      "id": "as-a-tester-i-would-like-the-mock-to-unlearn-all-responses-so-that-i-can-rerun-all-the-tests-without-restarting-the-service;learning-multiple-req/resp-and-verify-it-unlearn-all;;1"
+    },
+    {
+      "cells": [
+        "\"Banana\""
+      ],
+      "line": 17,
+      "id": "as-a-tester-i-would-like-the-mock-to-unlearn-all-responses-so-that-i-can-rerun-all-the-tests-without-restarting-the-service;learning-multiple-req/resp-and-verify-it-unlearn-all;;2"
+    },
+    {
+      "cells": [
+        "\"Laurel\""
+      ],
+      "line": 18,
+      "id": "as-a-tester-i-would-like-the-mock-to-unlearn-all-responses-so-that-i-can-rerun-all-the-tests-without-restarting-the-service;learning-multiple-req/resp-and-verify-it-unlearn-all;;3"
+    },
+    {
+      "cells": [
+        "\"Ful\""
+      ],
+      "line": 19,
+      "id": "as-a-tester-i-would-like-the-mock-to-unlearn-all-responses-so-that-i-can-rerun-all-the-tests-without-restarting-the-service;learning-multiple-req/resp-and-verify-it-unlearn-all;;4"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.scenario({
+  "line": 17,
+  "name": "Learning multiple req/resp and verify it unlearn all",
+  "description": "",
+  "id": "as-a-tester-i-would-like-the-mock-to-unlearn-all-responses-so-that-i-can-rerun-all-the-tests-without-restarting-the-service;learning-multiple-req/resp-and-verify-it-unlearn-all;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 7,
+  "name": "Mimicservice is up and running",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 8,
+  "name": "has learned request \"Banana\" and response \"Skids\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "has learned request \"Laurel\" and response \"Hardy\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "has learned request \"Ful\" and response \"Bil\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 11,
+  "name": "I use unlearnAll command",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 12,
+  "name": "I give request \"Banana\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 13,
+  "name": "I get response Form",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "MimicTestSteps.mimicservice_is_up_and_running()"
+});
+formatter.result({
+  "duration": 7794133,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Banana",
+      "offset": 21
+    },
+    {
+      "val": "Skids",
+      "offset": 43
+    }
+  ],
+  "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
+});
+formatter.result({
+  "duration": 67191309,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Laurel",
+      "offset": 21
+    },
+    {
+      "val": "Hardy",
+      "offset": 43
+    }
+  ],
+  "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
+});
+formatter.result({
+  "duration": 193280787,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Ful",
+      "offset": 21
+    },
+    {
+      "val": "Bil",
+      "offset": 40
+    }
+  ],
+  "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
+});
+formatter.result({
+  "duration": 65389381,
+  "status": "passed"
+});
+formatter.match({
+  "location": "MimicTestSteps.i_use_unlearnAll_command()"
+});
+formatter.result({
+  "duration": 9843924,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Banana",
+      "offset": 16
+    }
+  ],
+  "location": "MimicTestSteps.i_give_request(String)"
+});
+formatter.result({
+  "duration": 6988579,
+  "status": "passed"
+});
+formatter.match({
+  "location": "MimicTestSteps.i_get_response_NULL()"
+});
+formatter.result({
+  "duration": 103413,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 18,
+  "name": "Learning multiple req/resp and verify it unlearn all",
+  "description": "",
+  "id": "as-a-tester-i-would-like-the-mock-to-unlearn-all-responses-so-that-i-can-rerun-all-the-tests-without-restarting-the-service;learning-multiple-req/resp-and-verify-it-unlearn-all;;3",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 7,
+  "name": "Mimicservice is up and running",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 8,
+  "name": "has learned request \"Banana\" and response \"Skids\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "has learned request \"Laurel\" and response \"Hardy\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "has learned request \"Ful\" and response \"Bil\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 11,
+  "name": "I use unlearnAll command",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 12,
+  "name": "I give request \"Laurel\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 13,
+  "name": "I get response Form",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "MimicTestSteps.mimicservice_is_up_and_running()"
+});
+formatter.result({
+  "duration": 6978730,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Banana",
+      "offset": 21
+    },
+    {
+      "val": "Skids",
+      "offset": 43
+    }
+  ],
+  "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
+});
+formatter.result({
+  "duration": 126950431,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Laurel",
+      "offset": 21
+    },
+    {
+      "val": "Hardy",
+      "offset": 43
+    }
+  ],
+  "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
+});
+formatter.result({
+  "duration": 282305763,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Ful",
+      "offset": 21
+    },
+    {
+      "val": "Bil",
+      "offset": 40
+    }
+  ],
+  "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
+});
+formatter.result({
+  "duration": 179421405,
+  "status": "passed"
+});
+formatter.match({
+  "location": "MimicTestSteps.i_use_unlearnAll_command()"
+});
+formatter.result({
+  "duration": 60384524,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Laurel",
+      "offset": 16
+    }
+  ],
+  "location": "MimicTestSteps.i_give_request(String)"
+});
+formatter.result({
+  "duration": 19837633,
+  "status": "passed"
+});
+formatter.match({
+  "location": "MimicTestSteps.i_get_response_NULL()"
+});
+formatter.result({
+  "duration": 77149,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 19,
+  "name": "Learning multiple req/resp and verify it unlearn all",
+  "description": "",
+  "id": "as-a-tester-i-would-like-the-mock-to-unlearn-all-responses-so-that-i-can-rerun-all-the-tests-without-restarting-the-service;learning-multiple-req/resp-and-verify-it-unlearn-all;;4",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 7,
+  "name": "Mimicservice is up and running",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 8,
+  "name": "has learned request \"Banana\" and response \"Skids\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "has learned request \"Laurel\" and response \"Hardy\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "has learned request \"Ful\" and response \"Bil\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 11,
+  "name": "I use unlearnAll command",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 12,
+  "name": "I give request \"Ful\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 13,
+  "name": "I get response Form",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "MimicTestSteps.mimicservice_is_up_and_running()"
+});
+formatter.result({
+  "duration": 8574244,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Banana",
+      "offset": 21
+    },
+    {
+      "val": "Skids",
+      "offset": 43
+    }
+  ],
+  "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
+});
+formatter.result({
+  "duration": 231959268,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Laurel",
+      "offset": 21
+    },
+    {
+      "val": "Hardy",
+      "offset": 43
+    }
+  ],
+  "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
+});
+formatter.result({
+  "duration": 201478723,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Ful",
+      "offset": 21
+    },
+    {
+      "val": "Bil",
+      "offset": 40
+    }
+  ],
+  "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
+});
+formatter.result({
+  "duration": 111612080,
+  "status": "passed"
+});
+formatter.match({
+  "location": "MimicTestSteps.i_use_unlearnAll_command()"
+});
+formatter.result({
+  "duration": 51790993,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Ful",
+      "offset": 16
+    }
+  ],
+  "location": "MimicTestSteps.i_give_request(String)"
+});
+formatter.result({
+  "duration": 55570488,
+  "status": "passed"
+});
+formatter.match({
+  "location": "MimicTestSteps.i_get_response_NULL()"
+});
+formatter.result({
+  "duration": 76328,
+  "status": "passed"
+});
+formatter.uri("MimicServiceProject/MimicService/UnlearnResponse.feature");
+formatter.feature({
+  "line": 1,
+  "name": "As a Tester I would like to unlearn the previously learned response so that I do not have to perform the request again",
+  "description": "",
+  "id": "as-a-tester-i-would-like-to-unlearn-the-previously-learned-response-so-that-i-do-not-have-to-perform-the-request-again",
   "keyword": "Feature"
 });
 formatter.scenario({
   "line": 3,
-  "name": "Entering a request with a ? and a param with no added value",
+  "name": "Learn a response then unlearn it. TF:2.02",
   "description": "",
-  "id": "entering-a-request-with-no-parameter-values;entering-a-request-with-a-?-and-a-param-with-no-added-value",
+  "id": "as-a-tester-i-would-like-to-unlearn-the-previously-learned-response-so-that-i-do-not-have-to-perform-the-request-again;learn-a-response-then-unlearn-it.-tf:2.02",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -2335,11 +2810,21 @@ formatter.step({
 });
 formatter.step({
   "line": 6,
-  "name": "I give request \"test?param\"",
-  "keyword": "When "
+  "name": "has learned request \"Number\" and response \"One\"",
+  "keyword": "And "
 });
 formatter.step({
   "line": 7,
+  "name": "I use unlearn command",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 8,
+  "name": "I give request \"Number\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
   "name": "I get response Form",
   "keyword": "Then "
 });
@@ -2347,22 +2832,400 @@ formatter.match({
   "location": "MimicTestSteps.mimicservice_is_up_and_running()"
 });
 formatter.result({
-  "duration": 7451475,
+  "duration": 7961563,
   "status": "passed"
 });
 formatter.match({
   "location": "MimicTestSteps.mimic_has_no_learned_requests()"
 });
 formatter.result({
-  "duration": 59558861,
+  "duration": 222409988,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "test?param",
+      "val": "Number",
+      "offset": 21
+    },
+    {
+      "val": "One",
+      "offset": 43
+    }
+  ],
+  "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
+});
+formatter.result({
+  "duration": 213863240,
+  "status": "passed"
+});
+formatter.match({
+  "location": "MimicTestSteps.i_use_unlearn_command()"
+});
+formatter.result({
+  "duration": 67914789,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Number",
       "offset": 16
     }
   ],
   "location": "MimicTestSteps.i_give_request(String)"
+});
+formatter.result({
+  "duration": 30949598,
+  "status": "passed"
+});
+formatter.match({
+  "location": "MimicTestSteps.i_get_response_NULL()"
+});
+formatter.result({
+  "duration": 492443,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 11,
+  "name": "Unlearn in the middle of a sequence",
+  "description": "",
+  "id": "as-a-tester-i-would-like-to-unlearn-the-previously-learned-response-so-that-i-do-not-have-to-perform-the-request-again;unlearn-in-the-middle-of-a-sequence",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 12,
+  "name": "Mimicservice is up and running",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 13,
+  "name": "Mimic has no learned requests",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 14,
+  "name": "has learned request \"Number\" and response \"1\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 15,
+  "name": "has learned request \"Number\" and response \"2\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 16,
+  "name": "I give request \"Number\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 17,
+  "name": "I give request \"Number\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 18,
+  "name": "has learned request \"Number\" and response \"3\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 19,
+  "name": "I give request \"Number\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 20,
+  "name": "I give request \"Number\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "has learned request \"Number\" and response \"4\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 22,
+  "name": "I give request \"Number\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 23,
+  "name": "I give request \"Number\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 24,
+  "name": "I resetState",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 25,
+  "name": "I give request \"Number\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 26,
+  "name": "I give request \"Number\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 27,
+  "name": "I give request \"Number\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 28,
+  "name": "I use unlearn command",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 29,
+  "name": "I give request \"Number\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 30,
+  "name": "I get response \"2\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "MimicTestSteps.mimicservice_is_up_and_running()"
+});
+formatter.result({
+  "duration": 7577458,
+  "status": "passed"
+});
+formatter.match({
+  "location": "MimicTestSteps.mimic_has_no_learned_requests()"
+});
+formatter.result({
+  "duration": 86988727,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Number",
+      "offset": 21
+    },
+    {
+      "val": "1",
+      "offset": 43
+    }
+  ],
+  "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
+});
+formatter.result({
+  "duration": 156829377,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Number",
+      "offset": 21
+    },
+    {
+      "val": "2",
+      "offset": 43
+    }
+  ],
+  "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
+});
+formatter.result({
+  "duration": 170803662,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Number",
+      "offset": 16
+    }
+  ],
+  "location": "MimicTestSteps.i_give_request(String)"
+});
+formatter.result({
+  "duration": 78991461,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Number",
+      "offset": 16
+    }
+  ],
+  "location": "MimicTestSteps.i_give_request(String)"
+});
+formatter.result({
+  "duration": 80832786,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Number",
+      "offset": 21
+    },
+    {
+      "val": "3",
+      "offset": 43
+    }
+  ],
+  "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
+});
+formatter.result({
+  "duration": 140625969,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Number",
+      "offset": 16
+    }
+  ],
+  "location": "MimicTestSteps.i_give_request(String)"
+});
+formatter.result({
+  "duration": 55814247,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Number",
+      "offset": 16
+    }
+  ],
+  "location": "MimicTestSteps.i_give_request(String)"
+});
+formatter.result({
+  "duration": 97955420,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Number",
+      "offset": 21
+    },
+    {
+      "val": "4",
+      "offset": 43
+    }
+  ],
+  "location": "MimicTestSteps.has_learned_request_and_response(String,String)"
+});
+formatter.result({
+  "duration": 100647439,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Number",
+      "offset": 16
+    }
+  ],
+  "location": "MimicTestSteps.i_give_request(String)"
+});
+formatter.result({
+  "duration": 12220369,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Number",
+      "offset": 16
+    }
+  ],
+  "location": "MimicTestSteps.i_give_request(String)"
+});
+formatter.result({
+  "duration": 4379455,
+  "status": "passed"
+});
+formatter.match({
+  "location": "MimicTestSteps.i_resetState()"
+});
+formatter.result({
+  "duration": 3675672,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Number",
+      "offset": 16
+    }
+  ],
+  "location": "MimicTestSteps.i_give_request(String)"
+});
+formatter.result({
+  "duration": 4032694,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Number",
+      "offset": 16
+    }
+  ],
+  "location": "MimicTestSteps.i_give_request(String)"
+});
+formatter.result({
+  "duration": 3646126,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Number",
+      "offset": 16
+    }
+  ],
+  "location": "MimicTestSteps.i_give_request(String)"
+});
+formatter.result({
+  "duration": 4452090,
+  "status": "passed"
+});
+formatter.match({
+  "location": "MimicTestSteps.i_use_unlearn_command()"
+});
+formatter.result({
+  "duration": 3792217,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Number",
+      "offset": 16
+    }
+  ],
+  "location": "MimicTestSteps.i_give_request(String)"
+});
+formatter.result({
+  "duration": 3501266,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "2",
+      "offset": 16
+    }
+  ],
+  "location": "MimicTestSteps.i_get_response(String)"
+});
+formatter.result({
+  "duration": 85767,
+  "status": "passed"
+});
 });

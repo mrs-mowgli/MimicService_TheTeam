@@ -10,7 +10,7 @@ public class MimicTestSteps {
 	
 	@Given("^Mimicservice is up and running$")
 	public void mimicservice_is_up_and_running() throws Throwable {
-	if  (Runtime.getRuntime().exec("java -jar /Users/Marcu/Desktop/Skola/Automatisering/Projektarbete/sprint4/mimic.jar") != null);	
+	if  (Runtime.getRuntime().exec("java -jar /Users/Marcu/Desktop/Skola/Automatisering/Projektarbete/sprint5/mimic.jar") != null);	
 	 // System.out.println("MimicService up-n-running");
 	}
 	@Given("^has learned request \"([^\"]*)\" and response \"([^\"]*)\"$")
