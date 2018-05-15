@@ -6,6 +6,27 @@ import org.junit.Test;
 
 public class MimicJunitTest {
 	MimicSelenium mimic = new MimicSelenium();
+	
+	//@Test
+	public void testRequestWithoutResponse() {
+		mimic.goToPage("http://localhost:8080/request_without_response");
+		mimic.learn("");
+		mimic.goToPage("http://localhost:8080/request_without_response");
+		assertTrue(mimic.checkResponse("")); //Det ska bli grönt
+		mimic.closeBrowser();
+	}
+
+
+	//@Test
+	public void testResponseWithoutRequest() {
+		mimic.goToPage("http://localhost:8080/unlearnAllResponses");
+		mimic.goToPage("http://localhost:8080");
+		mimic.learn("Resp_utan_Req");
+		mimic.goToPage("http://localhost:8080");
+		assertTrue(mimic.checkResponse("Resp_utan_Req")); //Det ska bli grönt
+		mimic.closeBrowser();
+	}	
+	
 	//@Test
 	public void testResetStateParalellSequences() {
 		mimic.goToPage("http://localhost:8080/unlearnAll");
