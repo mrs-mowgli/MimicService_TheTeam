@@ -122,10 +122,39 @@ public class MimicJunitTest {
 				"GET /Number HTTP/1.1\n" + 
 				"GET /Number HTTP/1.1"));
 	}
+	public void testLinksToRequests() {
+		mimic.unlearnAllRequests();
+		mimic.goToPage("http://localhost:8080/Links");
+		mimic.learn("<html>\n" + 
+				"<body>\n" + 
+				"<a id=\"hey\" href=\"Hey\">Say Hey!</a><br> \n" + 
+				"<a id=\"you\" href=\"Youtube\">RickRoll</a><br>\n" + 
+				"</body>\n" + 
+				"</html>");
+		mimic.goToPage("http://localhost:8080/Hey");
+		mimic.learn("<html>\n" + 
+				"<body>\n" + 
+				"<h1> HEEEEEY! </h1>" + 
+				"<a id=\"links\" href=\"Links\">Back to Links</a><br>\n" + 
+				"</body>\n" + 
+				"</html>");
+		mimic.goToPage("http://localhost:8080/Youtube");
+		mimic.learn("<html>\n" + 
+				"<body>\n" + 
+				"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\n" + 
+				"<a id=\"links\" href=\"Links\">Back to Links</a><br>\n" + 
+				"</body>\n" + 
+				"</html>");
+		mimic.goToPage("http://localhost:8080/Links");
+		mimic.clickById("hey");
+		mimic.clickById("links");
+		mimic.clickById("you");
+		mimic.clickById("links");
+	}
 	
 	@Test
 	public void testOrder1() { testRelearn();}
 	public void testOrder2() { testResetStateParalellSequences(); testMoveStatesMultSeq();} 
 	public void testOrder3() { testParalellSequencesUnlearn();}
-	public void testOrder4() { testViewRequest(); mimic.quitSelenium();}
+	public void testOrder4() { testViewRequest(); testLinksToRequests(); mimic.quitSelenium();}
 }
