@@ -151,10 +151,30 @@ public class MimicJunitTest {
 		mimic.clickById("you");
 		mimic.clickById("links");
 	}
+	public void testJson() {
+		mimic.goToPage("http://localhost:8080/monthly?TotalCost=2525&Months=5");
+		mimic.learn("{\n" + 
+				"“TotalCost” : 2525,\n" + 
+				"“Months” : 5,\n" + 
+				"“MonthlyCost” : 505\n" + 
+				"}");
+		mimic.goToPage("http://localhost:8080/monthly?TotalCost=666&Months=3");
+		mimic.learn("{\n" + 
+				"“TotalCost” : 666,\n" + 
+				"“Months” : 3,\n" + 
+				"“MonthlyCost” : 222\n" + 
+				"}");
+		mimic.goToPage("http://localhost:8080/monthly?TotalCost=4044&Months=12");
+		assertTrue(mimic.checkResponse("{\n" + 
+				"“TotalCost” : 4044,\n" + 
+				"“Months” : 12,\n" + 
+				"“MonthlyCost” : 337\n" + 
+				"}"));
+	}
 	
 	@Test
 	public void testOrder1() { testRelearn();}
 	public void testOrder2() { testResetStateParalellSequences(); testMoveStatesMultSeq();} 
 	public void testOrder3() { testParalellSequencesUnlearn();}
-	public void testOrder4() { testViewRequest(); testLinksToRequests(); mimic.quitSelenium();}
+	public void testOrder4() { testJson(); testViewRequest(); testLinksToRequests(); mimic.quitSelenium();}
 }
