@@ -99,4 +99,10 @@ public class MimicSelenium {
 	public void unlearnAllRequests() {
 		goToPage(host+"unlearnAllResponses");
 	}
+	public void clickById(String id) {
+		WebElement element;
+		element = webDriver.findElement(By.id(id));
+		element.click();
+		delay(3000);
+	}
 }
