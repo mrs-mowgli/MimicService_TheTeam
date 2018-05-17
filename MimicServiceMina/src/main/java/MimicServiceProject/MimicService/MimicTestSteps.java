@@ -20,7 +20,7 @@ public class MimicTestSteps {
 	}
 	@Given("^Mimic has no learned requests$")
 	public void mimic_has_no_learned_requests() throws Throwable {
-		mc.unlearnAll();
+		mc.unlearnAllRequests();
 	}
 	@When("^I give request \"([^\"]*)\"$")
 	public void i_give_request(String arg1) throws Throwable {
@@ -28,11 +28,11 @@ public class MimicTestSteps {
 	}
 	@When("^I use unlearn command$")
 	public void i_use_unlearn_command() throws Throwable {
-	mc.unlearn();
+	mc.unlearnResponse();
 	} 
 	@When("^I use unlearnAll command$")
 	public void i_use_unlearnAll_command() throws Throwable {
-	    mc.unlearnAll();
+	    mc.unlearnAllRequests();
 	}
 	@When("^I KillMimic$")
 	public void i_KillMimic() throws Throwable {
