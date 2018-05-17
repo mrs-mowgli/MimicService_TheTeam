@@ -40,8 +40,8 @@ public class MimicSelenium {
 		return text.contains(expectedResponse);
 	}
 	
-	public void relearn(String text) {
-		webDriver.get(host+"relearnRequest");
+	public void relearnResponse(String text) {
+		webDriver.get(host+"relearnResponse");
 		delay(3000);
 		WebElement element=webDriver.findElement(By.name("text"));
 		element.click();
@@ -52,8 +52,8 @@ public class MimicSelenium {
 		delay(3000);
 	}
 	
-	public void unlearn() {
-		webDriver.get(host+"unlearnRequest");
+	public void unlearnResponse() {
+		webDriver.get(host+"unlearnResponse");
 		delay(3000);
 		//closeBrowser();
 	}
@@ -93,7 +93,7 @@ public class MimicSelenium {
 		return element.getText();
 				
 	}
-	public void addRequest() {
+	public void addRespones() {
 		goToPage(host+"addResponse");
 	}
 	public void unlearnAllRequests() {
