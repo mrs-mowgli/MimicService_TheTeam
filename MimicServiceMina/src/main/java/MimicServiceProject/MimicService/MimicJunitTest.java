@@ -91,7 +91,7 @@ public class MimicJunitTest {
 		
 		mimic.goToPage("http://localhost:8080/Number");
 		
-		mimic.unlearn();
+		mimic.unlearnResponse();
 		mimic.goToPage("http://localhost:8080/Number");
 		assertTrue(mimic.checkResponse("2")); //Fel! den visar "3"
 		mimic.goToPage("http://localhost:8080/Month");
@@ -104,7 +104,7 @@ public class MimicJunitTest {
 		mimic.goToPage("http://localhost:8080/Number");
 		mimic.learn("One");
 		mimic.relearn("2");
-		mimic.goToPage("http://localhost:8080/relearn");
+		mimic.goToPage("http://localhost:8080/relearnResponse");
 		mimic.goToPage("http://localhost:8080/Number");
 		assertTrue(mimic.checkUnlearn("Paste or type json"));
 		mimic.closeBrowser();
@@ -121,6 +121,7 @@ public class MimicJunitTest {
 		assertTrue(mimic.viewRequests().equals("GET /Number HTTP/1.1\n" + 
 				"GET /Number HTTP/1.1\n" + 
 				"GET /Number HTTP/1.1"));
+		mimic.closeBrowser();
 	}
 	public void testLinksToRequests() {
 		mimic.unlearnAllRequests();
@@ -150,6 +151,7 @@ public class MimicJunitTest {
 		mimic.clickById("links");
 		mimic.clickById("you");
 		mimic.clickById("links");
+		mimic.closeBrowser();
 	}
 	public void testJson() {
 		mimic.goToPage("http://localhost:8080/monthly?TotalCost=2525&Months=5");
@@ -170,11 +172,80 @@ public class MimicJunitTest {
 				"“Months” : 12,\n" + 
 				"“MonthlyCost” : 337\n" + 
 				"}"));
+		mimic.closeBrowser();
 	}
+		@Test 
+		public void testOKMessageLearnNextResponse() {
+			mimic.unlearnAllRequests();
+			mimic.goToPage("http://localhost:8080/LearnNextResponse?text=2");
+			assertTrue(mimic.checkResponse_without("OK"));
+			mimic.closeBrowser();
+			}
+		
+		@Test
+		public void testOKMessageUnlearnResponse() {
+			mimic.unlearnAllRequests();
+			mimic.goToPage("http://localhost:8080/Letter");
+			mimic.learn("A");
+			mimic.goToPage("http://localhost:8080/Letter");
+			mimic.unlearnResponse();
+			assertTrue(mimic.checkResponse_without("OK"));
+			mimic.closeBrowser();
+			}
+
+		@Test 
+		public void testOKMessageUnlearnAllResponses() {
+			mimic.unlearnAllRequests();
+			mimic.goToPage("http://localhost:8080/Letter");
+			mimic.learn("A");
+			mimic.addResponse();
+			mimic.learn("B");
+			mimic.goToPage("http://localhost:8080/LearnNextResponse?text=May");
+			mimic.goToPage("http://localhost:8080/Month");
+			mimic.unlearnAllRequests();
+			assertTrue(mimic.checkResponse_without("OK"));
+			mimic.closeBrowser();
+			}
+		
+		@Test
+		public void testOKMessageResetState() {
+			mimic.unlearnAllRequests();
+			mimic.goToPage("http://localhost:8080/Letter");
+			mimic.learn("A");
+			mimic.goToPage("http://localhost:8080/Letter");
+			mimic.addResponse();
+			mimic.learn("B");
+			mimic.goToPage("http://localhost:8080/Letter");
+			mimic.addResponse();
+			mimic.learn("C");
+			mimic.resetState();
+			mimic.closeBrowser();
+			}	
+
+		@Test
+		public void testOKMessageKillMimic() {
+			mimic.unlearnAllRequests();
+			mimic.goToPage("http://localhost:8080/Letter");
+			mimic.learn("A");
+			mimic.addResponse();
+			mimic.learn("B");
+			mimic.goToPage("http://localhost:8080/LearnNextResponse?text=May");
+			mimic.goToPage("http://localhost:8080/Month");
+			mimic.goToPage("http://localhost:8080/KillMimic");
+			assertTrue(mimic.checkResponse_without("OK"));
+			mimic.delay(8000);
+			try {
+				mc.startMimic();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			mimic.closeBrowser();
+			}
 	
 	@Test
 	public void testOrder1() { testRelearn();}
 	public void testOrder2() { testResetStateParalellSequences(); testMoveStatesMultSeq();} 
 	public void testOrder3() { testParalellSequencesUnlearn();}
 	public void testOrder4() { testJson(); testViewRequest(); testLinksToRequests(); mimic.quitSelenium();}
+	public void testOrder5() { testOKMessageLearnNextResponse(); testOKMessageUnlearnResponse();testOKMessageUnlearnAllResponses(); testOKMessageResetState(); testOKMessageKillMimic();}
 }
