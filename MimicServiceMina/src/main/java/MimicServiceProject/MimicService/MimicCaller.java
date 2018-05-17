@@ -66,7 +66,7 @@ public class MimicCaller {
 	/**
 	 * Unlearns all Mimics responses for a reset
 	 */
-	public void unlearnAllResponses(){
+	public void unlearnAllRequests(){
 		String requestToSend=host+"unlearnAllResponses";
 		service.executeGetRequest(requestToSend);
 	}
