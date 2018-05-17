@@ -37,6 +37,17 @@ public class MimicCaller {
 		service.executeGetRequest(requestToSend);
 	}
 	/**
+	 * Learn the Mimic a new response with one variables, with the LearnNextResponse? command syntax.
+	 * @param response
+	 */
+	
+	public void learnNewResponse(String response){
+		String requestToSend=host+"LearnNextResponse?" +"text=";
+		service.executeGetRequest(requestToSend);
+		requestToSend=host + response;
+		service.executeGetRequest(requestToSend);
+	}
+	/**
 	 * Calls for a response from Mimic by sending a string request. Mimic returns a response string
 	 * @param request
 	 * @return
@@ -48,14 +59,14 @@ public class MimicCaller {
 	/**
 	 * Unlearns the previous added responses to and including the last called state
 	 */
-	public void unlearn(){
+	public void unlearnResponse(){
 		String requestToSend=host+"unlearnResponse";
 		service.executeGetRequest(requestToSend);
 	}
 	/**
 	 * Unlearns all Mimics responses for a reset
 	 */
-	public void unlearnAll(){
+	public void unlearnAllResponses(){
 		String requestToSend=host+"unlearnAllResponses";
 		service.executeGetRequest(requestToSend);
 	}
