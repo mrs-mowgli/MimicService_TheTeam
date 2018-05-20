@@ -178,7 +178,7 @@ public class MimicJunitTest {
 		public void testOKMessageLearnNextResponse() {
 			mimic.unlearnAllRequests();
 			mimic.goToPage("http://localhost:8080/LearnNextResponse?text=2");
-			assertTrue(mimic.checkResponse_without("OK"));
+			assertFalse(mimic.checkResponse_without("OK"));
 			mimic.closeBrowser();
 			}
 		
@@ -189,7 +189,7 @@ public class MimicJunitTest {
 			mimic.learn("A");
 			mimic.goToPage("http://localhost:8080/Letter");
 			mimic.unlearnResponse();
-			assertTrue(mimic.checkResponse_without("OK"));
+			assertFalse(mimic.checkResponse_without("OK"));
 			mimic.closeBrowser();
 			}
 
@@ -203,7 +203,7 @@ public class MimicJunitTest {
 			mimic.goToPage("http://localhost:8080/LearnNextResponse?text=May");
 			mimic.goToPage("http://localhost:8080/Month");
 			mimic.unlearnAllRequests();
-			assertTrue(mimic.checkResponse_without("OK"));
+			assertFalse(mimic.checkResponse_without("OK"));
 			mimic.closeBrowser();
 			}
 		
@@ -219,6 +219,7 @@ public class MimicJunitTest {
 			mimic.addResponse();
 			mimic.learn("C");
 			mimic.resetState();
+			assertFalse(mimic.checkResponse_without("OK"));
 			mimic.closeBrowser();
 			}	
 
@@ -232,7 +233,7 @@ public class MimicJunitTest {
 			mimic.goToPage("http://localhost:8080/LearnNextResponse?text=May");
 			mimic.goToPage("http://localhost:8080/Month");
 			mimic.goToPage("http://localhost:8080/KillMimic");
-			assertTrue(mimic.checkResponse_without("OK"));
+			assertFalse(mimic.checkResponse_without("OK"));
 			mimic.delay(8000);
 			try {
 				mc.startMimic();
