@@ -41,7 +41,6 @@ public class MimicSelenium {
 	}
 	public boolean checkResponse_message(String expectedResponse) {	
 		WebElement element = webDriver.findElement(By.tagName("body"));
-		// WebElement element = webDriver.findElement(By.xpath("body:nth-child(3)"));
 		String text=element.getText();
 		return text.contains(expectedResponse);
 	}
