@@ -91,7 +91,7 @@ public class MimicSelenium {
 	public void quitSelenium() {
 		webDriver.quit();
 	}
-	// add testcase for a bug with addREsponses doesnt save in brain
+
 	public String viewRequests() {
 		WebElement element;
 		goToPage(host+"viewRequests");
