@@ -93,7 +93,7 @@ public class MimicSelenium {
 		return element.getText();
 				
 	}
-	public void addRespones() {
+	public void addResponse() {
 		goToPage(host+"addResponse");
 	}
 	public void unlearnAllRequests() {
