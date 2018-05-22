@@ -1,3 +1,9 @@
+###################################################################
+# 2018	       				          	  	  #
+# IT-Högskolan projektarbete grupp 3		 	   	  #
+# Nancy-Anne Delaney, Joakim Gustavsson, Markus Kolbe, Lotta Berg #
+###################################################################
+
 package MimicServiceProject.MimicService;
 
 import java.util.concurrent.TimeUnit;
