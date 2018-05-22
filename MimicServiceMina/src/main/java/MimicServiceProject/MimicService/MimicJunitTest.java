@@ -122,10 +122,10 @@ public class MimicJunitTest {
 				"GET /Number HTTP/1.1\n" + 
 				"GET /Number HTTP/1.1"));
 		mimic.closeBrowser();
-	}
-	public void testLinksToRequests() {
+	public void testHtml() {
 		mimic.unlearnAllRequests();
 		mimic.goToPage("http://localhost:8080/Links");
+		mimic.chooseMimeType("/html/body/form/select/option[4]");
 		mimic.learn("<html>\n" + 
 				"<body>\n" + 
 				"<a id=\"hey\" href=\"Hey\">Say Hey!</a><br> \n" + 
@@ -133,6 +133,7 @@ public class MimicJunitTest {
 				"</body>\n" + 
 				"</html>");
 		mimic.goToPage("http://localhost:8080/Hey");
+		mimic.chooseMimeType("/html/body/form/select/option[4]");
 		mimic.learn("<html>\n" + 
 				"<body>\n" + 
 				"<h1> HEEEEEY! </h1>" + 
@@ -140,6 +141,7 @@ public class MimicJunitTest {
 				"</body>\n" + 
 				"</html>");
 		mimic.goToPage("http://localhost:8080/Youtube");
+		mimic.chooseMimeType("/html/body/form/select/option[4]");
 		mimic.learn("<html>\n" + 
 				"<body>\n" + 
 				"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\n" + 
@@ -153,14 +155,18 @@ public class MimicJunitTest {
 		mimic.clickById("links");
 		mimic.closeBrowser();
 	}
+	//@Test
 	public void testJson() {
+		mimic.unlearnAllRequests();
 		mimic.goToPage("http://localhost:8080/monthly?TotalCost=2525&Months=5");
+		mimic.chooseMimeType("/html/body/form/select/option[2]");
 		mimic.learn("{\n" + 
 				"“TotalCost” : 2525,\n" + 
 				"“Months” : 5,\n" + 
 				"“MonthlyCost” : 505\n" + 
 				"}");
 		mimic.goToPage("http://localhost:8080/monthly?TotalCost=666&Months=3");
+		mimic.chooseMimeType("/html/body/form/select/option[2]");
 		mimic.learn("{\n" + 
 				"“TotalCost” : 666,\n" + 
 				"“Months” : 3,\n" + 
@@ -172,6 +178,21 @@ public class MimicJunitTest {
 				"“Months” : 12,\n" + 
 				"“MonthlyCost” : 337\n" + 
 				"}"));
+		mimic.closeBrowser();
+	}
+	//@Test
+	public void testXml() {
+		mimic.unlearnAllRequests();
+		mimic.goToPage("http://localhost:8080/xml");
+		mimic.chooseMimeType("/html/body/form/select/option[3]");
+		mimic.learn("<note>\n" + 
+				"<to>Tove</to>\n" + 
+				"<from>Jani</from>\n" + 
+				"<heading>Reminder</heading>\n" + 
+				"<body>Don't forget me this weekend!</body>\n" + 
+				"</note>");
+		mimic.goToPage("http://localhost:8080/xml");
+		assertTrue(mimic.getTextById("webkit-xml-viewer-source-xml").contains("xml"));
 		mimic.closeBrowser();
 	}
 		@Test 
@@ -242,6 +263,35 @@ public class MimicJunitTest {
 			}
 			mimic.closeBrowser();
 			}
+		//@Test
+		public void testAutoDetect() {
+			mimic.unlearnAllRequests();
+			mimic.goToPage("http://localhost:8080/Links");
+			mimic.learn("<html>\n" + 
+					"<body>\n" + 
+					"<a id=\"hey\" href=\"Hey\">Say Hey!</a><br> \n" + 
+					"<a id=\"you\" href=\"Youtube\">RickRoll</a><br>\n" + 
+					"</body>\n" + 
+					"</html>");
+			mimic.goToPage("http://localhost:8080/Links");
+			try {
+				mimic.clickById("hey");
+			}catch(Exception e) {
+				System.out.println(e.getMessage());
+				System.out.println("AutoDetect ain't workin'");
+			}finally {
+				mimic.closeBrowser();
+			}
+		}
+		//@Test
+		public void testLongPath() {
+			mimic.unlearnAllRequests();
+			mimic.goToPage("http://localhost:8080/test/text//");
+			mimic.learn("text");
+			mimic.goToPage("http://localhost:8080/Numbers");
+			assertTrue(mimic.getUrl().equals("http://localhost:8080/Numbers"));
+			mimic.closeBrowser();
+		}
 	
 	@Test
 	public void testOrder1() { testRelearn();}
