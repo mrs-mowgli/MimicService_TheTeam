@@ -39,6 +39,7 @@ public class MimicSelenium {
 		String text=element.getText();
 		return text.contains(expectedResponse);
 	}
+	// get response from message pages
 	public boolean checkResponse_message(String expectedResponse) {	
 		WebElement element = webDriver.findElement(By.tagName("body"));
 		String text=element.getText();
