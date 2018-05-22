@@ -7,6 +7,13 @@ import org.junit.Test;
 public class MimicJunitTest {
 	MimicSelenium mimic = new MimicSelenium();
 	
+	
+	public void testStartMimic() {
+			try {
+				mc.startMimic();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 	//@Test
 	public void testRequestWithoutResponse() {
 		mimic.goToPage("http://localhost:8080/request_without_response");
