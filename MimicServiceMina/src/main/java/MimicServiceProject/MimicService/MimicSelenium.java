@@ -163,4 +163,32 @@ public class MimicSelenium {
 		element.click();
 		delay(3000);
 	}
+	/**
+	 * chooses mime-type in the drop-down list.
+	 * @param xpath
+	 */
+	public void chooseMimeType(String xpath) {
+		WebElement element;
+		element = webDriver.findElement(By.name("mime"));
+		element.click();
+		element = webDriver.findElement(By.xpath(xpath));
+		element.click();
+	}
+	/**
+	 * Finds an element by ID and returns an element as a string
+	 * @param id
+	 * @return
+	 */
+	public String getTextById(String id) {
+		WebElement element;
+		element = webDriver.findElement(By.id(id));
+		return element.toString();
+	}
+	/**
+	 *  Returns the current URL as a string
+	 * @return
+	 */
+	public String getUrl() {
+		return webDriver.getCurrentUrl();
+	}
 }
