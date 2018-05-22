@@ -1,3 +1,9 @@
+###################################################################
+# 2018	       				          	  	  #
+# IT-Högskolan projektarbete grupp 3		 	   	  #
+# Nancy-Anne Delaney, Joakim Gustavsson, Marcus Kolbe, Lotta Berg #
+###################################################################
+
 package MimicServiceProject.MimicService;
 
 public class MimicCaller {
