@@ -19,11 +19,19 @@ public class MimicSelenium {
 		webDriver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 	}
 	
+	/**
+	 * Start a webpage
+	 * @param url
+	 */
 	public void goToPage(String url){
 		webDriver.get(url);
 		delay(3000);
 	}
 	
+	/**
+	 * Learn the Mimic a new request and response with one variable and with the form and click learn button.
+	 * @param text
+	 */
 	public void learn(String text) {
 		WebElement element=webDriver.findElement(By.name("text"));
 		element.click();
@@ -34,18 +42,30 @@ public class MimicSelenium {
 		delay(3000);
 	}
 	
+	/**
+	 * Verify the response in the form
+	 * @param expectedResponse
+	 */
 	public boolean checkResponse(String expectedResponse) {	
 		WebElement element=webDriver.findElement(By.cssSelector("pre"));
 		String text=element.getText();
 		return text.contains(expectedResponse);
 	}
-	// get response from message pages
+	
+	/**
+	 * Get response from message pages
+	 * @param expectedResponse
+	 */
 	public boolean checkResponse_message(String expectedResponse) {	
 		WebElement element = webDriver.findElement(By.tagName("body"));
 		String text=element.getText();
 		return text.contains(expectedResponse);
 	}
 	
+	/**
+	 * Relearn a new response to the request using command syntax
+	 * @param text
+	 */
 	public void relearnResponse(String text) {
 		webDriver.get(host+"relearnResponse");
 		delay(3000);
@@ -58,25 +78,35 @@ public class MimicSelenium {
 		delay(3000);
 	}
 	
+	/**
+	 * Unlearn a response to the request using command syntax
+	 */
 	public void unlearnResponse() {
 		webDriver.get(host+"unlearnResponse");
 		delay(3000);
 		//closeBrowser();
 	}
-		
+	
+	/**
+	 * Verify the response in message page after unlearn method call
+	 * @param expectedUnlearnedResponse
+	 */
 	public boolean checkUnlearn(String expectedUnlearnedResponse) {	
 		WebElement element=webDriver.findElement(By.cssSelector("body"));
 		String text=element.getText();
 		return text.contains(expectedUnlearnedResponse);
 	}
 	
+	/**
+	 * Reset all states using the command syntax
+	 */
 	public void resetState(){
 		String requestToSend=host+"resetState";
 		service.executeGetRequest(requestToSend);
 	}
 	
 	public void delay (int milliseconds) {
-		
+
 		try {
 			Thread.sleep(milliseconds);
 		} catch (InterruptedException e) {
@@ -88,23 +118,39 @@ public class MimicSelenium {
 		webDriver.close();
 		delay(3000);
 	}
+	
 	public void quitSelenium() {
 		webDriver.quit();
 	}
 
+	/**
+	 * Get list of requests and states using command syntax
+	 */
 	public String viewRequests() {
 		WebElement element;
 		goToPage(host+"viewRequests");
 		element = webDriver.findElement(By.tagName("body"));
-		return element.getText();
-				
+		return element.getText();			
 	}
+	
+	/**
+	 * Add a new response using the form and click Learn button after calling the command
+	 */
 	public void addResponse() {
 		goToPage(host+"addResponse");
 	}
+	
+	/**
+	 * Delete all requests responses
+	 */
 	public void unlearnAllRequests() {
 		goToPage(host+"unlearnAllResponses");
 	}
+	
+	/**
+	 * Find and click on element ID 
+	 * @param id
+	 */
 	public void clickById(String id) {
 		WebElement element;
 		element = webDriver.findElement(By.id(id));
