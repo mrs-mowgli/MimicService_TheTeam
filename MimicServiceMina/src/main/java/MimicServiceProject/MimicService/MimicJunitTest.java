@@ -118,9 +118,9 @@ public class MimicJunitTest {
 		mimic.addRequest();
 		mimic.learn("Three");
 		System.out.println(mimic.viewRequests());
-		assertTrue(mimic.viewRequests().equals("GET /Number HTTP/1.1\n" + 
-				"GET /Number HTTP/1.1\n" + 
-				"GET /Number HTTP/1.1"));
+		assertTrue(mimic.viewRequests().equals("GET /Number\n" + 
+				"GET /Number\n" + 
+				"GET /Number"));
 		mimic.closeBrowser();
 	public void testHtml() {
 		mimic.unlearnAllRequests();
