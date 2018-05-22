@@ -134,7 +134,7 @@ public class MimicSelenium {
 	}
 	
 	/**
-	 * Add a new response using the form and click Learn button after calling the command
+	 * Calling the http command addResponse, to get the form.
 	 */
 	public void addResponse() {
 		goToPage(host+"addResponse");
