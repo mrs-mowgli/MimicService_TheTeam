@@ -108,8 +108,8 @@ public class MimicSelenium {
 	 */
 	public void resetState(){
 		String requestToSend=host+"resetState";
-		service.executeGetRequest(requestToSend);
-	}
+		goToPage(requestToSend);
+		}
 	
 	public void delay (int milliseconds) {
 
