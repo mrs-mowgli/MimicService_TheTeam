@@ -26,7 +26,7 @@ public class MimicJunitTest {
 
 	//@Test
 	public void testResponseWithoutRequest() {
-		mimic.goToPage("http://localhost:8080/unlearnAllResponses");
+		mimic.unlearnAllRequests();
 		mimic.goToPage("http://localhost:8080");
 		mimic.learn("Resp_utan_Req");
 		mimic.goToPage("http://localhost:8080");
@@ -36,7 +36,7 @@ public class MimicJunitTest {
 	
 	//@Test
 	public void testResetStateParalellSequences() {
-		mimic.goToPage("http://localhost:8080/unlearnAll");
+		mimic.unlearnAllRequests();
 		mimic.goToPage("http://localhost:8080/Number");
 		mimic.learn("1");
 		mimic.goToPage("http://localhost:8080/LearnNextResponse?text=2");
@@ -76,7 +76,7 @@ public class MimicJunitTest {
 	
 	//@Test
 	public void testParalellSequencesUnlearn() {
-		mimic.goToPage("http://localhost:8080/unlearnAll");
+		mimic.unlearnAllRequests();
 		mimic.goToPage("http://localhost:8080/Number");
 		mimic.learn("1");
 		mimic.goToPage("http://localhost:8080/LearnNextResponse?text=2");
